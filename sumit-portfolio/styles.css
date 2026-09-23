@@ -1999,3 +1999,334 @@ h1, h2, h3, h4, .font-display {
     scroll-behavior: auto !important;
   }
 }
+/* =========================================================
+   MOBILE LAYOUT FIX
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+  html,
+  body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: clip;
+  }
+
+  body {
+    min-width: 0;
+  }
+
+  .container,
+  main,
+  section {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  .container {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .site-header .container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .nav-inner {
+    width: 100%;
+    min-width: 0;
+    gap: 12px;
+  }
+
+  .brand-logo,
+  .mobile-nav-toggle {
+    min-width: 0;
+  }
+
+  .mobile-nav-toggle {
+    flex: 0 0 auto;
+    white-space: nowrap;
+  }
+
+  /* Main cream sheets */
+  .paper-sheet,
+  .hero-sheet,
+  .about-sheet,
+  .work-sheet,
+  .philosophy-box,
+  .expertise-sheet,
+  .experience-sheet,
+  .contact-sheet {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 24px 18px;
+  }
+
+  /* Header metadata */
+  .sheet-header-meta {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 10px 14px;
+    width: 100%;
+  }
+
+  .sheet-header-meta > * {
+    min-width: 0;
+    max-width: 100%;
+    overflow-wrap: anywhere;
+  }
+
+  .sheet-header-meta > :last-child {
+    grid-column: 1 / -1;
+  }
+
+  /* Hero / About / Experience grids */
+  .hero-grid,
+  .about-grid,
+  .expertise-grid,
+  .contact-layout,
+  .stats-and-exploring-grid,
+  .timeline-editorial-item {
+    width: 100%;
+    min-width: 0;
+  }
+
+  /* Prevent large editorial headings from overflowing */
+  .hero-title,
+  .editorial-section-title,
+  .philosophy-quote {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    overflow-wrap: anywhere;
+    word-break: normal;
+  }
+
+  .hero-title {
+    font-size: clamp(2.8rem, 14vw, 4.8rem);
+  }
+
+  .editorial-section-title {
+    font-size: clamp(2.25rem, 11.5vw, 4rem);
+    line-height: 0.92;
+  }
+
+  .philosophy-quote {
+    font-size: clamp(2.2rem, 11vw, 4.5rem);
+  }
+
+  .hero-subtitle,
+  .hero-bio,
+  .about-lead-text,
+  .about-body-text,
+  .philosophy-support,
+  .timeline-body {
+    max-width: 100%;
+    overflow-wrap: anywhere;
+  }
+
+  /* Portfolio */
+  .portfolio-header-wrap,
+  .portfolio-grid,
+  .project-card,
+  .project-image-box,
+  .project-title,
+  .project-desc {
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  .portfolio-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 22px;
+    margin-top: 2rem;
+  }
+
+  .project-card,
+  .project-card.span-3,
+  .project-card.span-4,
+  .project-card.span-5,
+  .project-card.span-6,
+  .project-card.span-7,
+  .project-card.span-12 {
+    grid-column: 1 / -1;
+    width: 100%;
+  }
+
+  .project-card {
+    padding: 14px;
+    overflow: hidden;
+  }
+
+  .project-image-box {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .project-img,
+  .project-img-contain,
+  .about-portrait-img,
+  .hero-img {
+    max-width: 100%;
+  }
+
+  .project-title {
+    font-size: clamp(1.35rem, 7vw, 2rem);
+    overflow-wrap: anywhere;
+  }
+
+  .project-desc {
+    font-size: 0.95rem;
+    line-height: 1.55;
+    overflow-wrap: anywhere;
+  }
+
+  .project-footer-action {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 16px;
+  }
+
+  /* Portfolio filters */
+  .filter-bar {
+    width: 100%;
+    min-width: 0;
+    gap: 8px 18px;
+    margin-top: 1.5rem;
+    padding-bottom: 1rem;
+  }
+
+  .filter-btn {
+    min-width: 0;
+    flex: 0 0 auto;
+    font-size: 0.76rem;
+    letter-spacing: 0.08em;
+  }
+
+  .filter-btn.active::after {
+    bottom: -1rem;
+  }
+
+  /* Skills */
+  .skills-list,
+  .tools-wrap,
+  .principles-grid,
+  .process-steps-list,
+  .about-meta-list,
+  .hero-frame-meta,
+  .modal-meta-grid {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .skills-list > *,
+  .tools-wrap > *,
+  .principle-item,
+  .process-step,
+  .meta-info-block {
+    min-width: 0;
+    overflow-wrap: anywhere;
+  }
+
+  .tools-wrap {
+    border-left: 0;
+    padding-left: 0;
+  }
+
+  /* Forms */
+  .form-input,
+  .form-textarea,
+  .contact-form,
+  .contact-method,
+  .contact-card {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  .form-input,
+  .form-textarea {
+    font-size: 16px;
+  }
+
+  /* Footer */
+  .footer-nav,
+  .footer-bottom {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  /* Case study modal */
+  .case-study-modal-backdrop {
+    padding: 12px;
+  }
+
+  .case-study-modal {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    padding: 22px 16px;
+  }
+
+  .modal-cover-wrap,
+  .modal-cover-img {
+    max-width: 100%;
+  }
+}
+
+
+/* =========================================================
+   EXTRA SMALL PHONES
+   ========================================================= */
+
+@media (max-width: 420px) {
+
+  .container {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  .site-header .container {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .paper-sheet,
+  .hero-sheet,
+  .about-sheet,
+  .work-sheet,
+  .philosophy-box,
+  .expertise-sheet,
+  .experience-sheet,
+  .contact-sheet {
+    padding: 20px 14px;
+  }
+
+  .sheet-header-meta {
+    font-size: 0.66rem;
+    letter-spacing: 0.07em;
+  }
+
+  .editorial-section-title {
+    font-size: clamp(2rem, 10.5vw, 3.25rem);
+  }
+
+  .hero-title {
+    font-size: clamp(2.5rem, 13vw, 4rem);
+  }
+
+  .filter-bar {
+    gap: 7px 14px;
+  }
+
+  .filter-btn {
+    font-size: 0.7rem;
+  }
+}
