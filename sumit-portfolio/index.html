@@ -1,0 +1,1135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sumit — Graphic Designer &amp; Visual Creator</title>
+  <meta name="description" content="Portfolio of Sumit, a graphic designer creating bold, modern and memorable visual experiences across posters, branding, social media, events and digital design.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+
+  <!-- Subtle Film Grain Overlay for Tactile Paper/Print Feel -->
+  <div class="paper-grain-overlay" aria-hidden="true"></div>
+
+  <!-- Custom Interactive Cursor -->
+  <div class="custom-cursor" id="customCursor" aria-hidden="true"></div>
+  <div class="custom-cursor-follower" id="cursorFollower" aria-hidden="true"></div>
+
+  <!-- ==========================================================================
+       Navigation Bar
+       ========================================================================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container">
+      <nav class="nav-inner" aria-label="Main Navigation">
+        <a href="#hero" class="brand-logo" id="navLogo">
+          <span class="brand-title">SUMIT</span>
+          <span class="brand-subtitle">GRAPHIC DESIGNER</span>
+        </a>
+
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#about" class="nav-link">ABOUT</a></li>
+          <li><a href="#work" class="nav-link">WORK</a></li>
+          <li><a href="#process" class="nav-link">PROCESS</a></li>
+          <li><a href="#expertise" class="nav-link">SKILLS</a></li>
+          <li><a href="#experience" class="nav-link">EXPERIENCE</a></li>
+          <li>
+            <a href="#contact" class="nav-contact-btn">
+              <span class="circle-dot"></span>
+              <span>AVAILABLE / CONTACT</span>
+            </a>
+          </li>
+        </ul>
+
+        <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Toggle navigation menu">
+          MENU [≡]
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==========================================================================
+         Hero Section: Editorial Brand Deck Cover
+         ========================================================================== -->
+    <section class="hero-section" id="hero">
+      <div class="container">
+        <div class="hero-sheet paper-sheet" id="heroCard">
+          
+          <!-- Sheet Header Metadata -->
+          <div class="sheet-header-meta">
+            <span>SUMIT — GRAPHIC DESIGNER</span>
+            <span>PORTFOLIO SPECIMEN // 2026</span>
+            <span>EDITION 01</span>
+          </div>
+
+          <!-- Floating Paper Deck Elements (Physical Portfolio Pages Feel) -->
+          <!-- Floating Element 1: Typography Specimen -->
+          <div class="floating-element float-card-specimen" id="floatSpecimen" title="Typography Specimen Card">
+            <div class="stamp-title">SPECIMEN // SMT-26</div>
+            <div class="type-sample">Aa</div>
+            <div class="type-meta">
+              <span>SYNE 800</span>
+              <span>GEOMETRIC</span>
+            </div>
+          </div>
+
+          <!-- Floating Element 2: Mini Project Card -->
+          <div class="floating-element float-card-preview" id="floatPreview" title="Featured Event Visual Preview">
+            <img src="assets/project-01-event.jpg" alt="Mini Event Poster Preview" class="preview-img">
+            <div class="preview-meta">
+              <span>POSTER CAMPAIGN</span>
+              <span>2026</span>
+            </div>
+          </div>
+
+          <!-- Floating Element 3: Barcode Tag -->
+          <div class="floating-element float-card-barcode" id="floatBarcode" aria-hidden="true">
+            <svg class="barcode-svg" viewBox="0 0 100 24" fill="#111111">
+              <rect x="0" y="0" width="3" height="24"/>
+              <rect x="5" y="0" width="1.5" height="24"/>
+              <rect x="8" y="0" width="4" height="24"/>
+              <rect x="14" y="0" width="2" height="24"/>
+              <rect x="18" y="0" width="1" height="24"/>
+              <rect x="21" y="0" width="3" height="24"/>
+              <rect x="26" y="0" width="5" height="24"/>
+              <rect x="33" y="0" width="2" height="24"/>
+              <rect x="37" y="0" width="1.5" height="24"/>
+              <rect x="40" y="0" width="4" height="24"/>
+              <rect x="46" y="0" width="2" height="24"/>
+              <rect x="50" y="0" width="3" height="24"/>
+              <rect x="55" y="0" width="1" height="24"/>
+              <rect x="58" y="0" width="4" height="24"/>
+              <rect x="64" y="0" width="2" height="24"/>
+              <rect x="68" y="0" width="3" height="24"/>
+              <rect x="73" y="0" width="1.5" height="24"/>
+              <rect x="76" y="0" width="4.5" height="24"/>
+              <rect x="83" y="0" width="2" height="24"/>
+              <rect x="87" y="0" width="1" height="24"/>
+              <rect x="90" y="0" width="3.5" height="24"/>
+              <rect x="96" y="0" width="2" height="24"/>
+            </svg>
+            <span class="barcode-text">SMT-2026-IND</span>
+          </div>
+
+          <!-- Hero Main Grid -->
+          <div class="hero-grid">
+            <div class="hero-text-col">
+              <div class="hero-super-label">
+                <span>SUMIT — GRAPHIC DESIGNER</span>
+                <span>/</span>
+                <span>INDIA</span>
+              </div>
+
+              <h1 class="hero-title">
+                <span class="title-line">GRAPHIC</span>
+                <span class="title-line">DESIGNER</span>
+              </h1>
+
+              <p class="hero-subtitle">
+                Visual Designer creating bold, thoughtful and memorable visual experiences.
+              </p>
+
+              <p class="hero-bio">
+                I work across poster design, branding, social media, event creatives and digital design — turning ideas into visual systems that communicate clearly.
+              </p>
+
+              <div class="hero-actions">
+                <a href="#work" class="btn-primary" id="heroCtaWork">
+                  <span>VIEW SELECTED WORK</span>
+                  <span class="btn-arrow" aria-hidden="true">→</span>
+                </a>
+                <a href="#contact" class="btn-secondary" id="heroCtaContact">
+                  <span>LET'S TALK</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Hero Visual Composition: Framed Editorial Artwork -->
+            <div class="hero-visual-col">
+              <div class="hero-visual-frame">
+                <div class="hero-image-wrap">
+                  <img src="assets/sumit-hero-art.jpg" alt="Sumit — Graphic Designer Signature Artwork" class="hero-img">
+                </div>
+                <div class="hero-frame-meta">
+                  <div class="meta-item">
+                    <span class="meta-label">DISCIPLINE</span>
+                    <span class="meta-value">GRAPHIC DESIGNER</span>
+                  </div>
+                  <div class="meta-item">
+                    <span class="meta-label">LOCATION</span>
+                    <span class="meta-value">INDIA</span>
+                  </div>
+                  <div class="meta-item">
+                    <span class="meta-label">YEAR</span>
+                    <span class="meta-value">2026</span>
+                  </div>
+                  <div class="meta-item">
+                    <span class="meta-label">PIECE</span>
+                    <span class="meta-value">ORIGINAL ARTWORK</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sheet Footer Metadata -->
+          <div class="sheet-footer-meta">
+            <span>ARCHIVE REFERENCE: SMT-BRAND-2026</span>
+            <span>SCROLL DOWN ↓</span>
+            <span>PAGE 01 // 07</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Section 01: Introduction & About
+         ========================================================================== -->
+    <section class="section-about" id="about">
+      <div class="container">
+        <div class="about-sheet paper-sheet">
+          <div class="sheet-header-meta">
+            <span class="small-label">01 — ABOUT</span>
+            <span>CREATIVE PROFILE</span>
+            <span>SUMIT // IND</span>
+          </div>
+
+          <h2 class="editorial-section-title">
+            I TURN IDEAS<br>
+            INTO VISUAL<br>
+            EXPERIENCES.
+          </h2>
+
+          <div class="about-grid">
+            <div class="about-portrait-wrap">
+              <img src="assets/sumit-photo.jpg" alt="Sumit — Graphic Designer" class="about-portrait-img">
+              <div class="about-portrait-stamp">
+                <span>SUMIT // GRAPHIC DESIGNER</span>
+                <span>INDIA // 2026</span>
+              </div>
+            </div>
+
+            <div class="about-content-wrap">
+              <p class="about-lead-text">
+                I'm Sumit, a graphic designer passionate about creating visuals that communicate clearly, feel modern and leave an impression.
+              </p>
+
+              <p class="about-body-text">
+                My work combines typography, composition, imagery and visual storytelling across posters, branding, social media, events and digital experiences. Every project is approached with deliberate intention — balancing aesthetic boldness with strategic clarity.
+              </p>
+
+              <div class="about-meta-list">
+                <div class="meta-info-block">
+                  <span class="meta-info-title">BASED IN</span>
+                  <span class="meta-info-desc">India</span>
+                </div>
+                <div class="meta-info-block">
+                  <span class="meta-info-title">ROLE</span>
+                  <span class="meta-info-desc">Graphic Designer</span>
+                </div>
+                <div class="meta-info-block">
+                  <span class="meta-info-title">FOCUS</span>
+                  <span class="meta-info-desc">Visual Communication</span>
+                </div>
+                <div class="meta-info-block">
+                  <span class="meta-info-title">AVAILABLE FOR</span>
+                  <span class="meta-info-desc">Creative Projects / Collaboration</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="sheet-footer-meta">
+            <span>INDEX: 01-BIO</span>
+            <span>PAGE 02 // 07</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Section 02: Selected Work
+         ========================================================================== -->
+    <section class="section-work" id="work">
+      <div class="container">
+        <div class="work-sheet paper-sheet">
+          <div class="sheet-header-meta">
+            <span class="small-label">02 — SELECTED WORK</span>
+            <span>CURATED PORTFOLIO</span>
+            <span>2024 — 2026</span>
+          </div>
+
+          <div class="portfolio-header-wrap">
+            <h2 class="editorial-section-title">
+              A COLLECTION<br>
+              OF VISUAL<br>
+              WORK.
+            </h2>
+
+            <!-- Minimalist Typography Filter -->
+            <div class="filter-bar" role="tablist" aria-label="Project Categories">
+              <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">ALL</button>
+              <button class="filter-btn" data-filter="website" role="tab" aria-selected="false">WEBSITE</button>
+              <button class="filter-btn" data-filter="posters" role="tab" aria-selected="false">POSTERS</button>
+              <button class="filter-btn" data-filter="events" role="tab" aria-selected="false">EVENTS</button>
+              <button class="filter-btn" data-filter="social" role="tab" aria-selected="false">SOCIAL</button>
+              <button class="filter-btn" data-filter="digital" role="tab" aria-selected="false">DIGITAL</button>
+            </div>
+          </div>
+
+          <!-- Asymmetric Editorial Portfolio Grid -->
+          <div class="portfolio-grid" id="portfolioGrid">
+
+            <!-- ★ FEATURED: WEBSITE DESIGN — FALCON (Full Width, Dark Theme) -->
+            <article class="project-card span-12 featured-card dark-featured-card" data-category="website digital" data-project-id="project-w1" tabindex="0">
+              <div class="card-header-bar">
+                <span class="card-num">FEATURED</span>
+                <span class="card-category-badge">DIGITAL DESIGN // UI/UX // WEBSITE</span>
+                <span class="card-year-tag">2025</span>
+                <span class="featured-badge">WEBSITE DESIGN</span>
+              </div>
+              <div class="project-image-box dark-image-frame">
+                <img src="assets/work-falcon-website.jpg" alt="Falcon — Intelligent Design System Website UI" class="project-img" loading="eager" style="object-fit:contain; background:#000;">
+              </div>
+              <h3 class="project-title" style="color:#F3EFE4;">WEBSITE DESIGN — FALCON</h3>
+              <p class="project-desc" style="color:#aaa;">
+                A high-fidelity UI design for an intelligent design system platform. Bold editorial layout, 3D typographic sculpture hero, and a dark premium SaaS aesthetic designed for maximum visual impact.
+              </p>
+              <div class="project-footer-action">
+                <span class="project-link-text" style="color:#C2A582;">VIEW PROJECT →</span>
+                <span class="card-year-tag" style="color:#888;">REF: WEB-2025/FLN</span>
+              </div>
+            </article>
+
+            <!-- ROW: 3-up portrait posters -->
+            <!-- PROJECT R5: HYPER LOOP -->
+            <article class="project-card span-4" data-category="events posters" data-project-id="project-r5" tabindex="0">
+              <div class="card-header-bar">
+                <span class="card-num">PROJECT 01</span>
+                <span class="card-category-badge">EVENT CREATIVE</span>
+                <span class="card-year-tag">2025</span>
+              </div>
+              <div class="project-image-box poster-box">
+                <img src="assets/work-hyperloop.jpg" alt="Hyper Loop — Competitive Programming Contest Poster" class="project-img-contain" loading="lazy">
+              </div>
+              <h3 class="project-title">HYPER LOOP</h3>
+              <p class="project-desc">Competitive programming contest — cinematic neon red speed-trails, futuristic pod and structured tech-spec grid.</p>
+              <div class="project-footer-action">
+                <span class="project-link-text">VIEW PROJECT →</span>
+                <span class="card-year-tag">REF: HL-2025</span>
+              </div>
+            </article>
+
+            <!-- PROJECT R6: MEET & GREET -->
+            <article class="project-card span-4" data-category="events social" data-project-id="project-r6" tabindex="0">
+              <div class="card-header-bar">
+                <span class="card-num">PROJECT 02</span>
+                <span class="card-category-badge">EVENT CREATIVE</span>
+                <span class="card-year-tag">2025</span>
+              </div>
+              <div class="project-image-box poster-box" style="background:#fde000;">
+                <img src="assets/work-meetgreet.png" alt="Meet & Greet — TNN × AIBPT Event Poster" class="project-img-contain" loading="lazy">
+              </div>
+              <h3 class="project-title">MEET & GREET — TNN × AIBPT</h3>
+              <p class="project-desc">Pop-energy event collaboration poster — vibrant yellow canvas, organic shapes and bold condensed editorial type.</p>
+              <div class="project-footer-action">
+                <span class="project-link-text">VIEW PROJECT →</span>
+                <span class="card-year-tag">REF: MG-2025</span>
+              </div>
+            </article>
+
+            <!-- PROJECT: APJ Abdul Kalam Tribute -->
+            <article class="project-card span-4" data-category="social posters" data-project-id="project-ra1" tabindex="0">
+              <div class="card-header-bar">
+                <span class="card-num">PROJECT 03</span>
+                <span class="card-category-badge">TRIBUTE CREATIVE</span>
+                <span class="card-year-tag">2025</span>
+              </div>
+              <div class="project-image-box poster-box" style="background:#f5f0e8;">
+                <img src="assets/work-apjkalam.jpg" alt="Dr. APJ Abdul Kalam — Bharat Ratan Tribute Poster" class="project-img-contain" loading="lazy">
+              </div>
+              <h3 class="project-title">DR. APJ ABDUL KALAM</h3>
+              <p class="project-desc">Tribute poster for the Missile Man — tricolour spray paint composition, rocket and Bharat Ratan medal with bold calligraphic typography.</p>
+              <div class="project-footer-action">
+                <span class="project-link-text">VIEW PROJECT →</span>
+                <span class="card-year-tag">REF: APJ-2025</span>
+              </div>
+            </article>
+
+            <!-- ROW: portrait trio -->
+            <!-- PROJECT R1: HAPPY DUSSEHRA -->
+            <article class="project-card span-4" data-category="events social posters" data-project-id="project-r1" tabindex="0">
+              <div class="card-header-bar">
+                <span class="card-num">PROJECT 04</span>
+                <span class="card-category-badge">EVENT CREATIVE</span>
+                <span class="card-year-tag">2025</span>
+              </div>
+              <div class="project-image-box poster-box">
+                <img src="assets/work-dussehra.png" alt="Happy Dussehra — Team Next Nexus Social Poster" class="project-img-contain" loading="lazy">
+              </div>
+              <h3 class="project-title">HAPPY DUSSEHRA</h3>
+              <p class="project-desc">Festive social creative — night-sky atmosphere, glowing mandala art and elegant calligraphic display typography.</p>
+              <div class="project-footer-action">
+                <span class="project-link-text">VIEW PROJECT →</span>
+                <span class="card-year-tag">REF: DUSS-2025</span>
+              </div>
+            </article>
+
+            <!-- PROJECT R2: MARWAR -->
+            <article class="project-card span-4" data-category="events posters" data-project-id="project-r2" tabindex="0">
+              <div class="card-header-bar">
+                <span class="card-num">PROJECT 05</span>
+                <span class="card-category-badge">EVENT CAMPAIGN</span>
+                <span class="card-year-tag">2025</span>
+              </div>
+              <div class="project-image-box poster-box" style="background:#d4b483;">
+                <img src="assets/work-marwar.jpg" alt="Marwar — Rajasthan Association Event Poster" class="project-img-contain" loading="lazy">
+              </div>
+              <h3 class="project-title">MARWAR — EVENT POSTER</h3>
+              <p class="project-desc">Cultural event poster — desert sand textures, traditional Rajasthani attire hero and bold heritage typography.</p>
+              <div class="project-footer-action">
+                <span class="project-link-text">VIEW PROJECT →</span>
+                <span class="card-year-tag">REF: MRW-2025</span>
+              </div>
+            </article>
+
+            <!-- PROJECT R3: TEAM NEXT NEXUS HIRING -->
+            <article class="project-card span-4" data-category="social posters" data-project-id="project-r3" tabindex="0">
+              <div class="card-header-bar">
+                <span class="card-num">PROJECT 06</span>
+                <span class="card-category-badge">SOCIAL MEDIA</span>
+                <span class="card-year-tag">2025</span>
+              </div>
+              <div class="project-image-box poster-box" style="background:#cc0000;">
+                <img src="assets/work-hiring.jpg" alt="Team Next Nexus Now Hiring Recruitment Poster" class="project-img-contain" loading="lazy">
+              </div>
+              <h3 class="project-title">TEAM NEXT NEXUS — NOW HIRING</h3>
+              <p class="project-desc">Bold red recruitment poster — oversized condensed type, model compositing and urgent action hierarchy.</p>
+              <div class="project-footer-action">
+                <span class="project-link-text">VIEW PROJECT →</span>
+                <span class="card-year-tag">REF: HIRE-2025</span>
+              </div>
+            </article>
+
+            <!-- ROW: Wide + portrait -->
+            <!-- PROJECT R7: V-TAPP SAME TRACK (wider) -->
+            <article class="project-card span-5" data-category="events digital posters" data-project-id="project-r7" tabindex="0">
+              <div class="card-header-bar">
+                <span class="card-num">PROJECT 07</span>
+                <span class="card-category-badge">EVENT CREATIVE // DIGITAL</span>
+                <span class="card-year-tag">2026</span>
+              </div>
+              <div class="project-image-box poster-box">
+                <img src="assets/work-vtapp.jpg" alt="V-TAPP × TNN Same Track — Fintech & Coding Event Poster" class="project-img-contain" loading="lazy">
+              </div>
+              <h3 class="project-title">V-TAPP × TNN — SAME TRACK</h3>
+              <p class="project-desc">Dual-event cinematic poster — F1 split-world composition, fintech blue vs cyber red energy. Two tracks, one destination.</p>
+              <div class="project-footer-action">
+                <span class="project-link-text">VIEW PROJECT →</span>
+                <span class="card-year-tag">REF: VTAPP-2026</span>
+              </div>
+            </article>
+
+            <!-- PROJECT R4: HACKATHON -->
+            <article class="project-card span-4" data-category="events posters digital" data-project-id="project-r4" tabindex="0">
+              <div class="card-header-bar">
+                <span class="card-num">PROJECT 08</span>
+                <span class="card-category-badge">EVENT CREATIVE</span>
+                <span class="card-year-tag">2025</span>
+              </div>
+              <div class="project-image-box poster-box">
+                <img src="assets/work-hackathon.png" alt="Hackathon — Build The System Event Poster" class="project-img-contain" loading="lazy">
+              </div>
+              <h3 class="project-title">HACKATHON — BUILD THE SYSTEM</h3>
+              <p class="project-desc">Spider-Man themed hackathon — cinematic dark red, neon underglow PC build, custom glyph type and icon info hierarchy.</p>
+              <div class="project-footer-action">
+                <span class="project-link-text">VIEW PROJECT →</span>
+                <span class="card-year-tag">REF: HACK-2025</span>
+              </div>
+            </article>
+
+            <!-- PROJECT: WE ARE HIRING (bullhorn) -->
+            <article class="project-card span-3" data-category="social posters" data-project-id="project-ra2" tabindex="0">
+              <div class="card-header-bar">
+                <span class="card-num">PROJECT 09</span>
+                <span class="card-category-badge">RECRUITMENT</span>
+                <span class="card-year-tag">2025</span>
+              </div>
+              <div class="project-image-box poster-box">
+                <img src="assets/work-wearehiring.png" alt="We Are Hiring — Team Next Nexus Recruitment Poster" class="project-img-contain" loading="lazy">
+              </div>
+              <h3 class="project-title">WE ARE HIRING</h3>
+              <p class="project-desc">Halftone-art recruitment poster — bold bullhorn graphic, yellow highlights and structured team roles list.</p>
+              <div class="project-footer-action">
+                <span class="project-link-text">VIEW PROJECT →</span>
+                <span class="card-year-tag">REF: WAH-2025</span>
+              </div>
+            </article>
+
+            <!-- ROW: portrait trio -->
+            <!-- PROJECT: MADHYA BHARAT -->
+            <article class="project-card span-4" data-category="social posters" data-project-id="project-r9" tabindex="0">
+              <div class="card-header-bar">
+                <span class="card-num">PROJECT 10</span>
+                <span class="card-category-badge">SOCIAL MEDIA</span>
+                <span class="card-year-tag">2026</span>
+              </div>
+              <div class="project-image-box poster-box" style="background:#6b2a18;">
+                <img src="assets/work-madhyabharat.jpg" alt="Madhya Bharat Cultural Club Recruitment Poster" class="project-img-contain" loading="lazy">
+              </div>
+              <h3 class="project-title">MADHYA BHARAT — RECRUITMENT</h3>
+              <p class="project-desc">Heritage-inspired cultural club poster — sepia parchment, temple photography and folk art footer frieze.</p>
+              <div class="project-footer-action">
+                <span class="project-link-text">VIEW PROJECT →</span>
+                <span class="card-year-tag">REF: MB-2026</span>
+              </div>
+            </article>
+
+            <!-- PROJECT: JOIN TEAM NEXT NEXUS (golden thorns) -->
+            <article class="project-card span-4" data-category="social posters" data-project-id="project-ra3" tabindex="0">
+              <div class="card-header-bar">
+                <span class="card-num">PROJECT 11</span>
+                <span class="card-category-badge">RECRUITMENT</span>
+                <span class="card-year-tag">2025</span>
+              </div>
+              <div class="project-image-box poster-box">
+                <img src="assets/work-joinnexus.jpg" alt="We're Hiring — Join Team Next Nexus Recruitment Poster" class="project-img-contain" loading="lazy">
+              </div>
+              <h3 class="project-title">JOIN TEAM NEXT NEXUS</h3>
+              <p class="project-desc">Premium recruitment poster — dark gold & black, 3D metallic thorns sculpture, open positions and icon-driven role hierarchy.</p>
+              <div class="project-footer-action">
+                <span class="project-link-text">VIEW PROJECT →</span>
+                <span class="card-year-tag">REF: JTN-2025</span>
+              </div>
+            </article>
+
+            <!-- PROJECT: FRESHERS HORROR HIRING -->
+            <article class="project-card span-4" data-category="social posters" data-project-id="project-ra4" tabindex="0">
+              <div class="card-header-bar">
+                <span class="card-num">PROJECT 12</span>
+                <span class="card-category-badge">RECRUITMENT</span>
+                <span class="card-year-tag">2025</span>
+              </div>
+              <div class="project-image-box poster-box">
+                <img src="assets/work-freshers.jpg" alt="Now Hiring Freshers — Horror Theme Poster" class="project-img-contain" loading="lazy">
+              </div>
+              <h3 class="project-title">NOW HIRING — FRESHERS</h3>
+              <p class="project-desc">Bold cinematic horror-themed freshers recruitment poster — eerie silhouette, glowing type and atmospheric blue fog lighting.</p>
+              <div class="project-footer-action">
+                <span class="project-link-text">VIEW PROJECT →</span>
+                <span class="card-year-tag">REF: FRESH-2025</span>
+              </div>
+            </article>
+
+            <!-- ROW: Java duo -->
+            <!-- PROJECT R8: JAVA JUMPSTART 2.0 -->
+            <article class="project-card span-6" data-category="events digital" data-project-id="project-r8" tabindex="0">
+              <div class="card-header-bar">
+                <span class="card-num">PROJECT 13</span>
+                <span class="card-category-badge">EVENT CREATIVE // DIGITAL</span>
+                <span class="card-year-tag">2026</span>
+              </div>
+              <div class="project-image-box poster-box">
+                <img src="assets/work-javajump.png" alt="Java Jumpstart 2.0 — Workshop Event Poster" class="project-img-contain" loading="lazy">
+              </div>
+              <h3 class="project-title">JAVA JUMPSTART 2.0</h3>
+              <p class="project-desc">Workshop poster — dark purple neon sci-fi aesthetic, luminous glowing type, geometric corner accents and QR registration layout.</p>
+              <div class="project-footer-action">
+                <span class="project-link-text">VIEW PROJECT →</span>
+                <span class="card-year-tag">REF: JJ2-2026</span>
+              </div>
+            </article>
+
+            <!-- PROJECT: JAVA JUMPSTART 3.0 -->
+            <article class="project-card span-6" data-category="events digital" data-project-id="project-ra5" tabindex="0">
+              <div class="card-header-bar">
+                <span class="card-num">PROJECT 14</span>
+                <span class="card-category-badge">EVENT CREATIVE // DIGITAL</span>
+                <span class="card-year-tag">2026</span>
+              </div>
+              <div class="project-image-box poster-box">
+                <img src="assets/work-javajump3.png" alt="Java Jumpstart 3.0 — Workshop Event Poster" class="project-img-contain" loading="lazy">
+              </div>
+              <h3 class="project-title">JAVA JUMPSTART 3.0</h3>
+              <p class="project-desc">Advanced Java workshop poster — dark robotic mech background, glitch-chrome typography and structured event info layout.</p>
+              <div class="project-footer-action">
+                <span class="project-link-text">VIEW PROJECT →</span>
+                <span class="card-year-tag">REF: JJ3-2026</span>
+              </div>
+            </article>
+
+            <!-- PROJECT: HIRING NOW — RED HALFTONE -->
+            <article class="project-card span-4" data-category="social posters" data-project-id="project-rb1" tabindex="0">
+              <div class="card-header-bar">
+                <span class="card-num">PROJECT 15</span>
+                <span class="card-category-badge">RECRUITMENT</span>
+                <span class="card-year-tag">2025</span>
+              </div>
+              <div class="project-image-box poster-box" style="background:#b01010;">
+                <img src="assets/work-hiringnow.jpg" alt="Hiring Now — Team Next Nexus Club Red Halftone Poster" class="project-img-contain" loading="lazy">
+              </div>
+              <h3 class="project-title">HIRING NOW — TNN CLUB</h3>
+              <p class="project-desc">Vintage-grunge recruitment poster — deep red cracked texture, bold halftone portrait and distressed chalk-effect typography.</p>
+              <div class="project-footer-action">
+                <span class="project-link-text">VIEW PROJECT →</span>
+                <span class="card-year-tag">REF: HN-2025</span>
+              </div>
+            </article>
+
+            <!-- PROJECT: EID AL-FITR MUBARAK -->
+            <article class="project-card span-4" data-category="social posters" data-project-id="project-rb2" tabindex="0">
+              <div class="card-header-bar">
+                <span class="card-num">PROJECT 16</span>
+                <span class="card-category-badge">SOCIAL MEDIA // GREETING</span>
+                <span class="card-year-tag">2025</span>
+              </div>
+              <div class="project-image-box poster-box" style="background:#e8f0f8;">
+                <img src="assets/work-eid.jpg" alt="Eid Al-Fitr Mubarak — Team Next Nexus Greeting Poster" class="project-img-contain" loading="lazy">
+              </div>
+              <h3 class="project-title">EID AL-FITR MUBARAK</h3>
+              <p class="project-desc">Elegant Eid greeting creative — soft blue watercolour florals, mosque line-art illustration and calligraphic Arabic-English typography.</p>
+              <div class="project-footer-action">
+                <span class="project-link-text">VIEW PROJECT →</span>
+                <span class="card-year-tag">REF: EID-2025</span>
+              </div>
+            </article>
+
+            <!-- PROJECT: QUANTIX HACKATHON -->
+            <article class="project-card span-4" data-category="events posters digital" data-project-id="project-rb3" tabindex="0">
+              <div class="card-header-bar">
+                <span class="card-num">PROJECT 17</span>
+                <span class="card-category-badge">EVENT CREATIVE // DIGITAL</span>
+                <span class="card-year-tag">2025</span>
+              </div>
+              <div class="project-image-box poster-box">
+                <img src="assets/work-quantix.png" alt="QuantiX — 24 Hour Hackathon Event Poster" class="project-img-contain" loading="lazy">
+              </div>
+              <h3 class="project-title">QUANTIX — 24HR HACKATHON</h3>
+              <p class="project-desc">Hackathon event poster — dark cyber atmosphere, glowing shield hologram, neon red-white QUANTIX title and structured prize/venue grid.</p>
+              <div class="project-footer-action">
+                <span class="project-link-text">VIEW PROJECT →</span>
+                <span class="card-year-tag">REF: QX-2025</span>
+              </div>
+            </article>
+
+            <!-- PROJECT: WE ARE RECRUITING — RETRO FUNK -->
+            <article class="project-card span-6" data-category="social posters" data-project-id="project-rb4" tabindex="0">
+              <div class="card-header-bar">
+                <span class="card-num">PROJECT 18</span>
+                <span class="card-category-badge">RECRUITMENT // SOCIAL MEDIA</span>
+                <span class="card-year-tag">2025</span>
+              </div>
+              <div class="project-image-box poster-box" style="background:#9b2f0a;">
+                <img src="assets/work-recruiting.jpg" alt="We Are Recruiting — Team Next Nexus Retro Funk Style Poster" class="project-img-contain" loading="lazy">
+              </div>
+              <h3 class="project-title">WE ARE RECRUITING</h3>
+              <p class="project-desc">Retro 70s funk-machine recruitment poster — warm terracotta-orange, bold italicised script headline, funky character model and icon-driven roles list.</p>
+              <div class="project-footer-action">
+                <span class="project-link-text">VIEW PROJECT →</span>
+                <span class="card-year-tag">REF: REC-2025</span>
+              </div>
+            </article>
+
+          </div>
+
+          <div class="sheet-footer-meta">
+            <span>PORTFOLIO COLLECTION: 18 REAL ARCHIVES // MORE COMING SOON</span>
+            <span>PAGE 03 // 07</span>
+          </div>
+
+
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Section 03: Design Process
+         ========================================================================== -->
+    <section class="section-process" id="process">
+      <div class="container">
+        <div class="process-sheet paper-sheet">
+          <div class="sheet-header-meta">
+            <span class="small-label">03 — PROCESS</span>
+            <span>METHODOLOGY</span>
+            <span>FIVE-STAGE WORKFLOW</span>
+          </div>
+
+          <h2 class="editorial-section-title">
+            FROM IDEA<br>
+            TO FINAL<br>
+            VISUAL.
+          </h2>
+
+          <div class="process-steps-list">
+            <div class="process-step-item">
+              <span class="step-number">01</span>
+              <h3 class="step-title">UNDERSTAND</h3>
+              <p class="step-desc">Understand the objective, audience and message before putting pen to paper or pixels to canvas.</p>
+            </div>
+
+            <div class="process-step-item">
+              <span class="step-number">02</span>
+              <h3 class="step-title">EXPLORE</h3>
+              <p class="step-desc">Research references, typography, imagery and creative directions to discover fresh visual angles.</p>
+            </div>
+
+            <div class="process-step-item">
+              <span class="step-number">03</span>
+              <h3 class="step-title">CREATE</h3>
+              <p class="step-desc">Develop the visual concept and composition, establishing strong hierarchies and dynamic tension.</p>
+            </div>
+
+            <div class="process-step-item">
+              <span class="step-number">04</span>
+              <h3 class="step-title">REFINE</h3>
+              <p class="step-desc">Improve hierarchy, spacing, contrast and visual details until every element works in harmony.</p>
+            </div>
+
+            <div class="process-step-item">
+              <span class="step-number">05</span>
+              <h3 class="step-title">DELIVER</h3>
+              <p class="step-desc">Prepare the final artwork for its intended platform with production-ready precision and consistency.</p>
+            </div>
+          </div>
+
+          <div class="sheet-footer-meta">
+            <span>STANDARDS: EDITORIAL &amp; PRODUCTION</span>
+            <span>PAGE 04 // 07</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Section 04: Philosophy & Approach (Large Beige Accent Area)
+         ========================================================================== -->
+    <section class="philosophy-section" id="approach">
+      <div class="container">
+        <div class="philosophy-box">
+          <div class="sheet-header-meta" style="border-color: #111111; margin-bottom: 2rem;">
+            <span class="small-label">04 — APPROACH</span>
+            <span>DESIGN PHILOSOPHY</span>
+            <span>SUMIT // STATEMENT</span>
+          </div>
+
+          <h2 class="philosophy-quote">
+            GOOD DESIGN<br>
+            IS NOT JUST<br>
+            SEEN.<br>
+            IT IS<br>
+            REMEMBERED.
+          </h2>
+
+          <p class="philosophy-support">
+            I believe design should combine clarity, creativity and intention. Every visual decision should have a purpose — guiding attention, conveying emotion, and turning abstract ideas into lasting impressions.
+          </p>
+
+          <div class="principles-grid">
+            <div class="principle-item">
+              <h3 class="principle-name">CLARITY</h3>
+              <span class="principle-note">UNCOMPROMISING MESSAGE</span>
+            </div>
+            <div class="principle-item">
+              <h3 class="principle-name">CREATIVITY</h3>
+              <span class="principle-note">ORIGINAL VISUAL FORM</span>
+            </div>
+            <div class="principle-item">
+              <h3 class="principle-name">CONSISTENCY</h3>
+              <span class="principle-note">COHESIVE DESIGN SYSTEMS</span>
+            </div>
+            <div class="principle-item">
+              <h3 class="principle-name">IMPACT</h3>
+              <span class="principle-note">MEMORABLE ENGAGEMENT</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Section 05: Skills & Tools
+         ========================================================================== -->
+    <section class="section-expertise" id="expertise">
+      <div class="container">
+        <div class="expertise-sheet paper-sheet">
+          <div class="sheet-header-meta">
+            <span class="small-label">05 — EXPERTISE</span>
+            <span>CAPABILITIES &amp; TOOLSET</span>
+            <span>CREATIVE DISCIPLINE</span>
+          </div>
+
+          <h2 class="editorial-section-title">
+            WHAT I DO
+          </h2>
+
+          <div class="expertise-grid">
+            <div class="skills-wrap">
+              <div class="skills-list">
+                <div class="skill-row">
+                  <span class="skill-name">GRAPHIC DESIGN</span>
+                  <span class="skill-indicator">CORE DISCIPLINE</span>
+                </div>
+                <div class="skill-row">
+                  <span class="skill-name">POSTER DESIGN</span>
+                  <span class="skill-indicator">TYPOGRAPHIC &amp; EDITORIAL</span>
+                </div>
+                <div class="skill-row">
+                  <span class="skill-name">BRAND IDENTITY</span>
+                  <span class="skill-indicator">VISUAL SYSTEMS &amp; LOGOS</span>
+                </div>
+                <div class="skill-row">
+                  <span class="skill-name">SOCIAL MEDIA DESIGN</span>
+                  <span class="skill-indicator">DIGITAL CAMPAIGNS</span>
+                </div>
+                <div class="skill-row">
+                  <span class="skill-name">TYPOGRAPHY</span>
+                  <span class="skill-indicator">HIERARCHY &amp; EXPRESSION</span>
+                </div>
+                <div class="skill-row">
+                  <span class="skill-name">LAYOUT DESIGN</span>
+                  <span class="skill-indicator">EDITORIAL &amp; PRINT</span>
+                </div>
+                <div class="skill-row">
+                  <span class="skill-name">PHOTO MANIPULATION</span>
+                  <span class="skill-indicator">ART DIRECTION</span>
+                </div>
+                <div class="skill-row">
+                  <span class="skill-name">DIGITAL DESIGN</span>
+                  <span class="skill-indicator">ONLINE INTERFACES</span>
+                </div>
+                <div class="skill-row">
+                  <span class="skill-name">CREATIVE DIRECTION</span>
+                  <span class="skill-indicator">CONCEPTUAL STRATEGY</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="tools-wrap">
+              <div class="tools-title">TOOLS I USE</div>
+              <div class="tools-list">
+                <div class="tool-tag">
+                  <span>CANVA</span>
+                  <span>↗</span>
+                </div>
+                <div class="tool-tag">
+                  <span>ADOBE PHOTOSHOP</span>
+                  <span>↗</span>
+                </div>
+                <div class="tool-tag">
+                  <span>ADOBE ILLUSTRATOR</span>
+                  <span>↗</span>
+                </div>
+                <div class="tool-tag">
+                  <span>FIGMA</span>
+                  <span>↗</span>
+                </div>
+                <div class="tool-tag">
+                  <span>PREMIERE PRO</span>
+                  <span>↗</span>
+                </div>
+                <div class="tool-tag">
+                  <span>AFTER EFFECTS</span>
+                  <span>↗</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="sheet-footer-meta">
+            <span>NO ARBITRARY PERCENTAGES // PURE INTENTIONAL PRACTICE</span>
+            <span>PAGE 05 // 07</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Section 06: Experience & Timeline & Numbers
+         ========================================================================== -->
+    <section class="section-experience" id="experience">
+      <div class="container">
+        <div class="experience-sheet paper-sheet">
+          <div class="sheet-header-meta">
+            <span class="small-label">06 — EXPERIENCE</span>
+            <span>CHRONOLOGY &amp; CONTRIBUTIONS</span>
+            <span>RECORD // IND</span>
+          </div>
+
+          <h2 class="editorial-section-title">
+            WHERE I'VE<br>
+            CREATED.
+          </h2>
+
+          <div class="timeline-editorial-item">
+            <div class="timeline-period">
+              <span>2024 — PRESENT</span><br>
+              <span style="font-size: 0.72rem; color: var(--text-muted);">ACTIVE ROLE</span>
+            </div>
+
+            <div class="timeline-main-content">
+              <h3 class="timeline-role-title">GRAPHIC DESIGNER / CREATIVE TEAM</h3>
+              <div class="timeline-org">TEAM NEXT NEXUS</div>
+              <p class="timeline-body">
+                Created visual content for technical and creative events, including posters, promotional creatives, social media graphics, certificates and digital campaigns. Developed end-to-end event branding languages that elevated participant engagement and unified all communication touchpoints.
+              </p>
+            </div>
+          </div>
+
+          <!-- Numbers & Statistics + Currently Exploring -->
+          <div class="stats-and-exploring-grid">
+            <div class="stats-grid">
+              <div class="stat-box">
+                <span class="stat-number">50+</span>
+                <span class="stat-label">Designs</span>
+              </div>
+              <div class="stat-box">
+                <span class="stat-number">20+</span>
+                <span class="stat-label">Creative Works</span>
+              </div>
+              <div class="stat-box">
+                <span class="stat-number">10+</span>
+                <span class="stat-label">Campaigns</span>
+              </div>
+              <div class="stat-box">
+                <span class="stat-number">∞</span>
+                <span class="stat-label">Ideas</span>
+              </div>
+            </div>
+
+            <div class="exploring-box">
+              <div class="exploring-label">CURRENTLY EXPLORING</div>
+              <div class="exploring-tags">
+                <span class="exploring-tag">BRANDING</span>
+                <span class="exploring-tag">MOTION</span>
+                <span class="exploring-tag">UI/UX</span>
+                <span class="exploring-tag">3D</span>
+                <span class="exploring-tag">ART DIRECTION</span>
+                <span class="exploring-tag">VISUAL SYSTEMS</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="sheet-footer-meta">
+            <span>RECORD VERIFIED // EDITABLE METRICS</span>
+            <span>PAGE 06 // 07</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Section 07: Contact
+         ========================================================================== -->
+    <section class="section-contact" id="contact">
+      <div class="container">
+        <div class="contact-sheet paper-sheet">
+          <div class="sheet-header-meta">
+            <span class="small-label">07 — CONTACT</span>
+            <span>GET IN TOUCH</span>
+            <span>NEW INQUIRIES 2026</span>
+          </div>
+
+          <div class="contact-layout">
+            <div class="contact-info-col">
+              <h2 class="contact-massive-heading">
+                LET'S<br>
+                CREATE<br>
+                SOMETHING<br>
+                GREAT.
+              </h2>
+
+              <p class="contact-intro-p">
+                Have an idea, project or collaboration in mind? Reach out directly via mobile, WhatsApp, or email.
+              </p>
+
+              <!-- Direct Mobile & WhatsApp Card -->
+              <div class="contact-direct-card">
+                <div class="direct-email-label">DIRECT MOBILE / WHATSAPP</div>
+                <a href="tel:+919571015740" class="direct-email-link" id="phoneCallBtn" title="Call directly">
+                  +91 95710 15740 ↗
+                </a>
+                <div style="margin-top: 0.8rem; display: flex; gap: 0.8rem; flex-wrap: wrap;">
+                  <a href="tel:+919571015740" class="btn-secondary" style="padding: 0.5rem 1rem; font-size: 0.75rem;">CALL DIRECT</a>
+                  <a href="https://wa.me/919571015740" target="_blank" rel="noopener noreferrer" class="btn-secondary" style="padding: 0.5rem 1rem; font-size: 0.75rem;">WHATSAPP ↗</a>
+                </div>
+              </div>
+
+              <!-- Direct Email Card -->
+              <div class="contact-direct-card">
+                <div class="direct-email-label">DIRECT EMAIL INQUIRY</div>
+                <a href="mailto:bhamusumit223@gmail.com" class="direct-email-link" id="emailCopyBtn" title="Click to compose email or copy">
+                  bhamusumit223@gmail.com ↗
+                </a>
+                <div style="margin-top: 0.5rem; font-family: var(--font-mono); font-size: 0.72rem; color: var(--text-muted);">
+                  Click to compose or copy to clipboard
+                </div>
+              </div>
+            </div>
+
+            <!-- Interactive Contact Form -->
+            <div class="contact-form-card">
+              <div class="form-title">TRANSMIT A MESSAGE</div>
+              <form id="contactForm" novalidate>
+                <div class="form-group">
+                  <label for="userName" class="form-label">YOUR NAME *</label>
+                  <input type="text" id="userName" class="form-input" placeholder="e.g. Alex Vance" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="userEmail" class="form-label">EMAIL ADDRESS *</label>
+                  <input type="email" id="userEmail" class="form-input" placeholder="name@domain.com" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="projectType" class="form-label">PROJECT TYPE</label>
+                  <input type="text" id="projectType" class="form-input" placeholder="Poster, Branding, Social, etc.">
+                </div>
+
+                <div class="form-group">
+                  <label for="userMessage" class="form-label">PROJECT DETAILS *</label>
+                  <textarea id="userMessage" class="form-textarea" placeholder="Describe your vision, timeline, and goals..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn-primary" style="width: 100%; justify-content: center;">
+                  <span>START A CONVERSATION</span>
+                  <span class="btn-arrow" aria-hidden="true">→</span>
+                </button>
+
+                <div class="form-status-msg" id="formStatusMsg" role="alert">
+                  Message received! Sumit will respond within 24 hours.
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <div class="sheet-footer-meta">
+            <span>FINAL SPREAD // END OF DECK</span>
+            <span>PAGE 07 // 07</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       Site Footer
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div>
+          <div class="footer-brand-title">SUMIT</div>
+          <div class="footer-brand-sub">GRAPHIC DESIGNER &amp; VISUAL CREATOR</div>
+        </div>
+        <nav class="footer-nav" aria-label="Footer Navigation">
+          <a href="#about">ABOUT</a>
+          <a href="#work">WORK</a>
+          <a href="#contact">CONTACT</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 SUMIT</span>
+        <span>DESIGNED &amp; CREATED BY SUMIT</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       Editorial Case Study Modal (High-End Design Presentation View)
+       ========================================================================== -->
+  <div class="case-study-modal-backdrop" id="caseStudyModalBackdrop" role="dialog" aria-modal="true" aria-labelledby="modalProjectTitle">
+    <div class="case-study-modal" id="caseStudyModal">
+      <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close Case Study">
+        <span>CLOSE</span>
+        <span>[ESC]</span>
+      </button>
+
+      <div class="sheet-header-meta">
+        <span id="modalCategoryHeader">CASE STUDY // EDITORIAL</span>
+        <span id="modalRefCode">REF: SMT-CS</span>
+      </div>
+
+      <h2 class="editorial-section-title" id="modalProjectTitle" style="margin-bottom: 1rem;">
+        PROJECT TITLE
+      </h2>
+
+      <div class="modal-meta-grid">
+        <div class="modal-meta-item">
+          <div class="meta-k">CLIENT / PROJECT</div>
+          <div class="meta-v" id="modalClient">TEAM NEXT NEXUS</div>
+        </div>
+        <div class="modal-meta-item">
+          <div class="meta-k">CATEGORY</div>
+          <div class="meta-v" id="modalCategory">POSTER DESIGN</div>
+        </div>
+        <div class="modal-meta-item">
+          <div class="meta-k">YEAR</div>
+          <div class="meta-v" id="modalYear">2026</div>
+        </div>
+      </div>
+
+      <!-- Case Study Cover Image -->
+      <div class="modal-cover-wrap">
+        <img src="" alt="Project Artwork Cover" id="modalCoverImg" class="modal-cover-img">
+      </div>
+
+      <!-- Overview -->
+      <div class="modal-section-block">
+        <div class="modal-block-title">01 — OVERVIEW</div>
+        <p class="modal-block-p" id="modalOverviewText">
+          Project overview description goes here.
+        </p>
+      </div>
+
+      <!-- Creative Direction -->
+      <div class="modal-section-block">
+        <div class="modal-block-title">02 — CREATIVE DIRECTION</div>
+        <p class="modal-block-p" id="modalDirectionText">
+          Creative direction and concept breakdown.
+        </p>
+      </div>
+
+      <!-- Design Process -->
+      <div class="modal-section-block">
+        <div class="modal-block-title">03 — DESIGN PROCESS</div>
+        <p class="modal-block-p" id="modalProcessText">
+          Research, moodboarding, typographic exploration, grid tension, and composition refinement.
+        </p>
+        <div class="modal-process-pills">
+          <span class="process-pill">RESEARCH</span>
+          <span class="process-pill">MOODBOARD</span>
+          <span class="process-pill">CONCEPT</span>
+          <span class="process-pill">TYPOGRAPHY</span>
+          <span class="process-pill">COMPOSITION</span>
+          <span class="process-pill">FINAL DESIGN</span>
+        </div>
+      </div>
+
+      <!-- Final Work Gallery -->
+      <div class="modal-section-block">
+        <div class="modal-block-title">04 — FINAL ARTIFACTS &amp; SYSTEMS</div>
+        <p class="modal-block-p" style="margin-bottom: 1.5rem;">
+          Production layouts, typographic rules, and media applications.
+        </p>
+        <div class="modal-cover-wrap" style="margin: 0;">
+          <img src="" alt="Final Work Detail" id="modalDetailImg" class="modal-cover-img">
+        </div>
+      </div>
+
+      <div class="sheet-footer-meta" style="margin-top: 3rem;">
+        <span>END OF CASE STUDY PRESENTATION</span>
+        <button class="btn-primary modal-close-btn-bottom" id="modalCloseBtnBottom" style="padding: 0.6rem 1.4rem; font-size: 0.75rem;">
+          <span>CLOSE CASE STUDY</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
