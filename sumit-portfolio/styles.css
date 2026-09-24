@@ -2901,3 +2901,18 @@ h1, h2, h3, h4, .font-display {
   }
 
 }
+/* ===== LAPTOP HERO TITLE FIX ===== */
+
+@media (min-width: 1024px) and (max-width: 1600px) {
+  .hero-title {
+    font-size: 6rem !important;
+    line-height: 0.86 !important;
+    letter-spacing: -0.045em !important;
+    max-width: 850px !important;
+  }
+
+  .hero-title .title-line {
+    font-size: inherit !important;
+    line-height: inherit !important;
+  }
+}
