@@ -2905,12 +2905,16 @@ h1, h2, h3, h4, .font-display {
 
 @media (min-width: 900px) and (max-width: 1400px) {
   .hero-title {
-    font-size: 4.6rem !important;
+    font-size: 5rem !important;
     line-height: 0.88 !important;
     letter-spacing: -0.045em !important;
-    width: 820px !important;
-    max-width: 820px !important;
-    margin-right: 0 !important;
+
+    /* IMPORTANT */
+    width: 760px !important;
+    max-width: 760px !important;
+
+    /* Don't allow title to enter image area */
+    overflow: visible !important;
   }
 
   .hero-title .title-line {
