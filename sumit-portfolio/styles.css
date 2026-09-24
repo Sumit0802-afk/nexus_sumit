@@ -2004,3 +2004,333 @@ h1, h2, h3, h4, .font-display {
     scroll-behavior: auto !important;
   }
 }
+/* ============================================================
+   MOBILE HERO FIX
+   GRAPHIC DESIGNER + IMAGE BELOW
+   ============================================================ */
+
+@media (max-width: 768px) {
+
+  /* ---------- GLOBAL MOBILE ---------- */
+
+  html,
+  body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .container {
+    width: 100%;
+    max-width: 100%;
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  /* ---------- HERO SECTION ---------- */
+
+  .hero-section {
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+  }
+
+  .hero-sheet {
+    width: 100%;
+    max-width: 100%;
+    padding: 1.4rem;
+    overflow: hidden;
+  }
+
+  /*
+    IMPORTANT:
+    Mobile par text pehle aur image uske neeche.
+  */
+
+  .hero-grid {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+    gap: 2rem;
+    align-items: stretch;
+  }
+
+  .hero-text-col {
+    width: 100%;
+    max-width: 100%;
+    order: 1;
+  }
+
+  .hero-visual-col {
+    width: 100%;
+    max-width: 100%;
+    order: 2;
+    display: block;
+  }
+
+  /* ---------- TOP LABEL ---------- */
+
+  .hero-super-label {
+    width: 100%;
+    font-size: 0.68rem;
+    line-height: 1.4;
+    letter-spacing: 0.11em;
+    margin-bottom: 1.2rem;
+    white-space: normal;
+  }
+
+  /* ---------- GRAPHIC DESIGNER TITLE ---------- */
+
+  .hero-title {
+    width: 100%;
+    max-width: 100%;
+
+    /*
+      Prevent GRAPHIC / DESIGNER from breaking
+      into random pieces.
+    */
+    word-break: normal;
+    overflow-wrap: normal;
+    hyphens: none;
+
+    font-size: clamp(3.15rem, 13vw, 5.8rem);
+    line-height: 0.86;
+    letter-spacing: -0.055em;
+
+    margin-bottom: 1.5rem;
+  }
+
+  .hero-title .title-line {
+    display: block;
+
+    /*
+      Each word stays together.
+    */
+    white-space: nowrap;
+    word-break: keep-all;
+    overflow-wrap: normal;
+
+    width: max-content;
+    max-width: 100%;
+  }
+
+  /*
+    Specifically prevent the second word
+    from becoming DESI / GNER.
+  */
+
+  .hero-title .title-line:first-child {
+    white-space: nowrap;
+  }
+
+  .hero-title .title-line:last-child {
+    white-space: nowrap;
+  }
+
+  /* ---------- SUBTITLE ---------- */
+
+  .hero-subtitle {
+    width: 100%;
+    max-width: 100%;
+
+    font-size: 1.05rem;
+    line-height: 1.4;
+
+    margin-bottom: 1rem;
+  }
+
+  .hero-bio {
+    width: 100%;
+    max-width: 100%;
+
+    font-size: 0.92rem;
+    line-height: 1.55;
+
+    margin-bottom: 1.7rem;
+  }
+
+  /* ---------- BUTTONS ---------- */
+
+  .hero-actions {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.75rem;
+  }
+
+  .hero-actions .btn-primary,
+  .hero-actions .btn-secondary {
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* ============================================================
+     HERO IMAGE
+     ============================================================ */
+
+  .hero-visual-frame {
+    width: 100%;
+
+    /*
+      Can grow up to 1500px on larger screens,
+      but mobile automatically stays within viewport.
+    */
+    max-width: 1500px;
+
+    margin: 0 auto;
+
+    padding: 0.65rem;
+
+    box-sizing: border-box;
+  }
+
+  .hero-image-wrap {
+    width: 100%;
+    max-width: 1500px;
+
+    /*
+      Keep image wide instead of making it tiny.
+    */
+    aspect-ratio: 16 / 9;
+
+    overflow: hidden;
+  }
+
+  .hero-img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center;
+
+    display: block;
+  }
+
+  /* ---------- IMAGE META ---------- */
+
+  .hero-frame-meta {
+    width: 100%;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 0.8rem;
+
+    margin-top: 0.75rem;
+    padding-top: 0.7rem;
+
+    font-size: 0.62rem;
+  }
+
+  .hero-frame-meta .meta-label {
+    font-size: 0.52rem;
+  }
+
+  .hero-frame-meta .meta-value {
+    font-size: 0.62rem;
+  }
+
+  /* ---------- HIDE FLOATING ELEMENTS ---------- */
+
+  .floating-element {
+    display: none !important;
+  }
+
+  /* ---------- OTHER MOBILE FIXES ---------- */
+
+  .paper-sheet {
+    width: 100%;
+    max-width: 100%;
+    padding: 1.4rem;
+    overflow: hidden;
+  }
+
+  .about-grid,
+  .expertise-grid,
+  .contact-layout,
+  .stats-and-exploring-grid {
+    width: 100%;
+    max-width: 100%;
+  }
+
+}
+
+
+/* ============================================================
+   EXTRA SMALL PHONES
+   ============================================================ */
+
+@media (max-width: 430px) {
+
+  .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .hero-sheet {
+    padding: 1rem;
+  }
+
+  .hero-title {
+    /*
+      Large enough to look bold,
+      small enough for full words.
+    */
+    font-size: clamp(2.8rem, 12.8vw, 4.5rem);
+    line-height: 0.87;
+    letter-spacing: -0.055em;
+  }
+
+  .hero-title .title-line {
+    white-space: nowrap;
+  }
+
+  .hero-super-label {
+    font-size: 0.62rem;
+  }
+
+  .hero-subtitle {
+    font-size: 0.98rem;
+  }
+
+  .hero-bio {
+    font-size: 0.88rem;
+  }
+
+  .hero-visual-frame {
+    padding: 0.5rem;
+  }
+
+  .hero-image-wrap {
+    aspect-ratio: 16 / 9;
+  }
+
+  .hero-frame-meta {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+  }
+
+}
+
+
+/* ============================================================
+   VERY SMALL PHONES
+   ============================================================ */
+
+@media (max-width: 360px) {
+
+  .hero-title {
+    font-size: 2.55rem;
+    line-height: 0.88;
+  }
+
+  .hero-sheet {
+    padding: 0.85rem;
+  }
+
+  .hero-visual-frame {
+    padding: 0.4rem;
+  }
+
+}
