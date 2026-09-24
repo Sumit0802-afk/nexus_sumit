@@ -2330,3 +2330,175 @@ h1, h2, h3, h4, .font-display {
     font-size: 0.7rem;
   }
 }
+/* =========================================
+   HERO — GRAPHIC DESIGNER TOP + PHOTO BELOW
+   ========================================= */
+
+.hero-sheet {
+    overflow: hidden;
+}
+
+.hero-grid {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 35px !important;
+    width: 100%;
+}
+
+/* Top small label */
+.hero-super-label {
+    margin-bottom: 5px !important;
+}
+
+/* GRAPHIC DESIGNER — single horizontal heading */
+.hero-title {
+    width: 100% !important;
+    max-width: 100% !important;
+
+    display: block !important;
+
+    font-size: clamp(55px, 9vw, 125px) !important;
+    line-height: 0.82 !important;
+    letter-spacing: -0.07em !important;
+
+    white-space: nowrap !important;
+    margin: 0 !important;
+}
+
+/* Keep each word on same line */
+.hero-title .title-line {
+    display: inline !important;
+    white-space: nowrap !important;
+}
+
+/* Space between GRAPHIC + DESIGNER */
+.hero-title .title-line + .title-line::before {
+    content: " " !important;
+}
+
+/* Make DESIGNER visually different */
+.hero-title .title-line:last-child {
+    color: #A48767 !important;
+}
+
+/* Hero visual comes BELOW heading */
+.hero-visual-frame {
+    width: min(620px, 85%) !important;
+    margin: 10px auto 0 !important;
+
+    transform: rotate(1deg) !important;
+
+    padding: 8px !important;
+    background: #111 !important;
+
+    box-shadow: 12px 12px 0 #A48767 !important;
+}
+
+/* Image */
+.hero-image-wrap {
+    width: 100% !important;
+    aspect-ratio: 4 / 3 !important;
+    overflow: hidden !important;
+}
+
+.hero-img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+}
+
+/* Intro/details below image */
+.hero-content {
+    width: 100% !important;
+}
+
+/* CTA/details */
+.hero-actions {
+    margin-top: 25px !important;
+}
+
+/* Decorative graphic-design line */
+.hero-sheet::after {
+    content: "VISUAL IDENTITY  /  BRANDING  /  POSTER  /  DIGITAL";
+    position: absolute;
+    bottom: 18px;
+    right: 25px;
+
+    font-family: var(--font-mono);
+    font-size: 9px;
+    letter-spacing: 0.12em;
+
+    color: #111;
+    opacity: 0.65;
+}
+
+/* =========================================
+   DESKTOP
+   ========================================= */
+
+@media (min-width: 769px) {
+
+    .hero-grid {
+        padding: 45px 55px 70px !important;
+    }
+
+    .hero-title {
+        font-size: clamp(70px, 10vw, 145px) !important;
+    }
+
+    .hero-visual-frame {
+        width: min(680px, 70%) !important;
+    }
+
+}
+
+
+/* =========================================
+   TABLET
+   ========================================= */
+
+@media (max-width: 768px) {
+
+    .hero-grid {
+        padding: 30px 25px 50px !important;
+    }
+
+    .hero-title {
+        font-size: clamp(45px, 12vw, 80px) !important;
+        white-space: normal !important;
+    }
+
+    .hero-title .title-line {
+        display: block !important;
+    }
+
+    .hero-title .title-line + .title-line::before {
+        content: none !important;
+    }
+
+    .hero-visual-frame {
+        width: 90% !important;
+    }
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 480px) {
+
+    .hero-title {
+        font-size: 48px !important;
+        line-height: 0.88 !important;
+    }
+
+    .hero-visual-frame {
+        width: 100% !important;
+        box-shadow: 7px 7px 0 #A48767 !important;
+    }
+
+    .hero-sheet::after {
+        display: none;
+    }
+}
