@@ -596,7 +596,7 @@ h1, h2, h3, h4, .font-display {
 }
 
 .hero-title {
-  font-size: clamp(3.75rem, 8.8vw, 8.4rem);
+  font-size: clamp(3.75rem, 7vw, 7.2rem);
   line-height: 0.88;
   letter-spacing: -0.04em;
   color: var(--text-primary);
