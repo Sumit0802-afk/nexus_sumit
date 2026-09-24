@@ -2404,7 +2404,7 @@ h1, h2, h3, h4, .font-display {
    ========================================================= */
 
 .hero-visual-frame {
-  width: min(900px, 88vw) !important;
+  width: min(1100px, 88vw) !important;
   max-width: 900px !important;
 
   margin: 12px auto 0 !important;
