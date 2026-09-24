@@ -2903,7 +2903,7 @@ h1, h2, h3, h4, .font-display {
 }
 /* ===== LAPTOP HERO TITLE FIX ===== */
 
-@media (min-width: 1024px) and (max-width: 1600px) {
+@media (min-width: 900px) and (max-width: 1400px) {
   .hero-title {
     font-size: 6rem !important;
     line-height: 0.86 !important;
