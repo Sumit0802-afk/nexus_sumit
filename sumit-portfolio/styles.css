@@ -2330,175 +2330,343 @@ h1, h2, h3, h4, .font-display {
     font-size: 0.7rem;
   }
 }
-/* =========================================
-   HERO — GRAPHIC DESIGNER TOP + PHOTO BELOW
-   ========================================= */
+/* =========================================================
+   HERO — FIXED EDITORIAL GRAPHIC DESIGNER HERO
+   ========================================================= */
 
 .hero-sheet {
-    overflow: hidden;
+  overflow: hidden;
 }
 
+/* Main hero layout */
 .hero-grid {
-    display: flex !important;
-    flex-direction: column !important;
-    gap: 35px !important;
-    width: 100%;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 32px !important;
+  width: 100%;
+  padding: 35px 40px 65px !important;
 }
 
-/* Top small label */
+/* Small top label */
 .hero-super-label {
-    margin-bottom: 5px !important;
+  margin-bottom: 4px !important;
 }
 
-/* GRAPHIC DESIGNER — single horizontal heading */
+/* =========================================================
+   GRAPHIC DESIGNER TITLE
+   ========================================================= */
+
 .hero-title {
-    width: 100% !important;
-    max-width: 100% !important;
+  width: 100% !important;
+  max-width: 100% !important;
 
-    display: block !important;
+  display: block !important;
 
-    font-size: clamp(55px, 9vw, 125px) !important;
-    line-height: 0.82 !important;
-    letter-spacing: -0.07em !important;
+  /*
+    Smaller responsive font.
+    This prevents the title from going outside the screen.
+  */
+  font-size: clamp(42px, 7.5vw, 115px) !important;
 
-    white-space: nowrap !important;
-    margin: 0 !important;
+  line-height: 0.88 !important;
+  letter-spacing: -0.065em !important;
+
+  margin: 0 !important;
+
+  /*
+    IMPORTANT:
+    Don't force the heading outside the viewport.
+  */
+  white-space: normal !important;
+  overflow: visible !important;
+  word-break: normal !important;
+  overflow-wrap: normal !important;
 }
 
-/* Keep each word on same line */
+/* Individual words */
 .hero-title .title-line {
-    display: inline !important;
-    white-space: nowrap !important;
+  display: inline !important;
+  white-space: nowrap !important;
 }
 
-/* Space between GRAPHIC + DESIGNER */
+/* Space between GRAPHIC and DESIGNER */
 .hero-title .title-line + .title-line::before {
-    content: " " !important;
+  content: " " !important;
 }
 
-/* Make DESIGNER visually different */
+/* DESIGNER color */
 .hero-title .title-line:last-child {
-    color: #A48767 !important;
+  color: #A48767 !important;
 }
 
-/* Hero visual comes BELOW heading */
+/* =========================================================
+   HERO IMAGE FRAME
+   ========================================================= */
+
 .hero-visual-frame {
-    width: min(620px, 85%) !important;
-    margin: 10px auto 0 !important;
+  width: min(680px, 85%) !important;
 
-    transform: rotate(1deg) !important;
+  margin: 12px auto 0 !important;
 
-    padding: 8px !important;
-    background: #111 !important;
+  padding: 8px !important;
 
-    box-shadow: 12px 12px 0 #A48767 !important;
+  background: #111 !important;
+
+  border: 1px solid #111 !important;
+
+  transform: rotate(1deg) !important;
+
+  box-shadow: 12px 12px 0 #A48767 !important;
+
+  /*
+    Don't cut image outside frame
+  */
+  overflow: visible !important;
 }
 
-/* Image */
+/* =========================================================
+   IMAGE — NEVER CROP
+   ========================================================= */
+
 .hero-image-wrap {
-    width: 100% !important;
-    aspect-ratio: 4 / 3 !important;
-    overflow: hidden !important;
+  width: 100% !important;
+
+  /*
+    Remove fixed 4:3 crop.
+    Height follows the actual image.
+  */
+  height: auto !important;
+  aspect-ratio: auto !important;
+
+  overflow: hidden !important;
+
+  border: 1px solid #111 !important;
+
+  background: #E2D9CC !important;
 }
 
+/*
+  FULL IMAGE
+  No cropping whatsoever.
+*/
 .hero-img {
-    width: 100% !important;
-    height: 100% !important;
-    object-fit: cover !important;
+  width: 100% !important;
+  height: auto !important;
+
+  display: block !important;
+
+  object-fit: contain !important;
+  object-position: center center !important;
+
+  max-width: 100% !important;
+
+  transform: none !important;
 }
 
-/* Intro/details below image */
+/* Don't zoom the image on hover */
+.hero-visual-frame:hover .hero-img {
+  transform: none !important;
+}
+
+/* =========================================================
+   HERO CONTENT
+   ========================================================= */
+
 .hero-content {
-    width: 100% !important;
+  width: 100% !important;
+  max-width: 900px !important;
 }
 
-/* CTA/details */
 .hero-actions {
-    margin-top: 25px !important;
+  margin-top: 25px !important;
 }
 
-/* Decorative graphic-design line */
+/* =========================================================
+   DECORATIVE FOOTER TEXT
+   ========================================================= */
+
 .hero-sheet::after {
-    content: "VISUAL IDENTITY  /  BRANDING  /  POSTER  /  DIGITAL";
-    position: absolute;
-    bottom: 18px;
-    right: 25px;
+  content: "VISUAL IDENTITY  /  BRANDING  /  POSTER  /  DIGITAL";
 
-    font-family: var(--font-mono);
-    font-size: 9px;
-    letter-spacing: 0.12em;
+  position: absolute;
 
-    color: #111;
-    opacity: 0.65;
-}
+  bottom: 18px;
+  right: 25px;
 
-/* =========================================
-   DESKTOP
-   ========================================= */
+  font-family: var(--font-mono);
 
-@media (min-width: 769px) {
+  font-size: 9px;
 
-    .hero-grid {
-        padding: 45px 55px 70px !important;
-    }
+  letter-spacing: 0.12em;
 
-    .hero-title {
-        font-size: clamp(70px, 10vw, 145px) !important;
-    }
+  color: #111;
 
-    .hero-visual-frame {
-        width: min(680px, 70%) !important;
-    }
+  opacity: 0.65;
 
+  pointer-events: none;
 }
 
 
-/* =========================================
+/* =========================================================
+   LARGE DESKTOP
+   ========================================================= */
+
+@media (min-width: 1200px) {
+
+  .hero-grid {
+    padding: 40px 50px 70px !important;
+  }
+
+  .hero-title {
+    font-size: clamp(70px, 7.5vw, 115px) !important;
+  }
+
+  .hero-visual-frame {
+    width: min(680px, 70%) !important;
+  }
+}
+
+
+/* =========================================================
    TABLET
-   ========================================= */
+   ========================================================= */
 
 @media (max-width: 768px) {
 
-    .hero-grid {
-        padding: 30px 25px 50px !important;
-    }
+  .hero-grid {
+    padding: 28px 22px 55px !important;
 
-    .hero-title {
-        font-size: clamp(45px, 12vw, 80px) !important;
-        white-space: normal !important;
-    }
+    gap: 28px !important;
+  }
 
-    .hero-title .title-line {
-        display: block !important;
-    }
+  .hero-title {
+    /*
+      Smaller title on tablet
+    */
+    font-size: clamp(40px, 10vw, 72px) !important;
 
-    .hero-title .title-line + .title-line::before {
-        content: none !important;
-    }
+    line-height: 0.9 !important;
 
-    .hero-visual-frame {
-        width: 90% !important;
-    }
+    white-space: normal !important;
+  }
+
+  .hero-title .title-line {
+    display: inline !important;
+    white-space: nowrap !important;
+  }
+
+  .hero-title .title-line + .title-line::before {
+    content: " " !important;
+  }
+
+  .hero-visual-frame {
+    width: 90% !important;
+
+    padding: 7px !important;
+
+    box-shadow: 8px 8px 0 #A48767 !important;
+  }
+
+  .hero-image-wrap {
+    height: auto !important;
+    aspect-ratio: auto !important;
+  }
+
+  .hero-img {
+    width: 100% !important;
+    height: auto !important;
+
+    object-fit: contain !important;
+  }
 }
 
 
-/* =========================================
+/* =========================================================
    MOBILE
-   ========================================= */
+   ========================================================= */
 
 @media (max-width: 480px) {
 
-    .hero-title {
-        font-size: 48px !important;
-        line-height: 0.88 !important;
-    }
+  .hero-grid {
+    padding: 24px 14px 45px !important;
 
-    .hero-visual-frame {
-        width: 100% !important;
-        box-shadow: 7px 7px 0 #A48767 !important;
-    }
+    gap: 24px !important;
+  }
 
-    .hero-sheet::after {
-        display: none;
-    }
+  .hero-title {
+    /*
+      Allows GRAPHIC / DESIGNER to wrap naturally
+      instead of getting cut.
+    */
+    font-size: clamp(36px, 12vw, 52px) !important;
+
+    line-height: 0.9 !important;
+
+    white-space: normal !important;
+
+    overflow-wrap: normal !important;
+  }
+
+  .hero-title .title-line {
+    display: block !important;
+
+    white-space: nowrap !important;
+  }
+
+  .hero-title .title-line + .title-line::before {
+    content: none !important;
+  }
+
+  .hero-visual-frame {
+    width: 100% !important;
+
+    margin-top: 5px !important;
+
+    padding: 6px !important;
+
+    transform: rotate(0.7deg) !important;
+
+    box-shadow: 6px 6px 0 #A48767 !important;
+  }
+
+  .hero-image-wrap {
+    width: 100% !important;
+
+    height: auto !important;
+
+    aspect-ratio: auto !important;
+  }
+
+  .hero-img {
+    width: 100% !important;
+
+    height: auto !important;
+
+    object-fit: contain !important;
+  }
+
+  .hero-sheet::after {
+    display: none !important;
+  }
+}
+
+
+/* =========================================================
+   EXTRA SMALL PHONES
+   ========================================================= */
+
+@media (max-width: 360px) {
+
+  .hero-title {
+    font-size: 34px !important;
+  }
+
+  .hero-grid {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+
+  .hero-visual-frame {
+    width: 100% !important;
+  }
 }
