@@ -2784,3 +2784,120 @@ h1, h2, h3, h4, .font-display {
   }
 
 }
+/* ============================================================
+   HERO — IMAGE LOWER + FULL SIZE
+   ============================================================ */
+
+@media (min-width: 769px) {
+
+  .hero-grid {
+    align-items: start;
+  }
+
+  /* Text stays at the top */
+  .hero-text-col {
+    position: relative;
+    z-index: 5;
+  }
+
+  /*
+    Move ONLY the image downward.
+    Size remains unchanged.
+  */
+  .hero-visual-col {
+    position: relative;
+    top: 55px;
+    z-index: 4;
+  }
+
+  /*
+    Keep the image large.
+    DO NOT reduce its width.
+  */
+  .hero-visual-frame {
+    width: 100%;
+    max-width: 1500px;
+  }
+
+  /*
+    Prevent title from going behind image.
+  */
+  .hero-title {
+    position: relative;
+    z-index: 10;
+
+    width: max-content;
+    max-width: 100%;
+
+    word-break: normal;
+    overflow-wrap: normal;
+    hyphens: none;
+  }
+
+  .hero-title .title-line {
+    white-space: nowrap;
+    width: max-content;
+    max-width: 100%;
+  }
+
+}
+
+
+/* ============================================================
+   LAPTOP — LITTLE MORE DOWN
+   ============================================================ */
+
+@media (min-width: 769px) and (max-width: 1200px) {
+
+  .hero-visual-col {
+    top: 70px;
+  }
+
+}
+
+
+/* ============================================================
+   LARGE DESKTOP
+   ============================================================ */
+
+@media (min-width: 1201px) {
+
+  .hero-visual-col {
+    top: 60px;
+  }
+
+}
+
+
+/* ============================================================
+   MOBILE — IMAGE BELOW TEXT
+   ============================================================ */
+
+@media (max-width: 768px) {
+
+  .hero-grid {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hero-text-col {
+    order: 1;
+  }
+
+  .hero-visual-col {
+    order: 2;
+
+    /*
+      Reset desktop positioning.
+    */
+    top: 0;
+
+    width: 100%;
+  }
+
+  .hero-visual-frame {
+    width: 100%;
+    max-width: 1500px;
+  }
+
+}
