@@ -2334,3 +2334,453 @@ h1, h2, h3, h4, .font-display {
   }
 
 }
+/* ============================================================
+   FINAL HERO LAYOUT FIX
+   LAPTOP + DESKTOP + MOBILE
+   ============================================================ */
+
+/* ============================================================
+   DESKTOP / LAPTOP
+   ============================================================ */
+
+@media (min-width: 769px) {
+
+  .hero-section {
+    width: 100%;
+    padding-top: 1.5rem;
+    padding-bottom: 4rem;
+  }
+
+  .hero-sheet {
+    width: 100%;
+    max-width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+
+    padding: clamp(2.5rem, 4vw, 4.5rem);
+
+    overflow: hidden;
+  }
+
+  /* Main two-column layout */
+
+  .hero-grid {
+    display: grid;
+
+    /*
+      Give heading more space than image,
+      but keep image large.
+    */
+    grid-template-columns: minmax(0, 1.08fr) minmax(420px, 0.92fr);
+
+    gap: clamp(2rem, 3.5vw, 4.5rem);
+
+    align-items: center;
+
+    width: 100%;
+  }
+
+  /* LEFT */
+
+  .hero-text-col {
+    width: 100%;
+    min-width: 0;
+  }
+
+  /*
+    VERY IMPORTANT:
+    Prevent GRAPHIC and DESIGNER from breaking.
+  */
+
+  .hero-title {
+    width: 100%;
+    max-width: 100%;
+
+    font-size: clamp(4.8rem, 7vw, 8rem);
+
+    line-height: 0.86;
+
+    letter-spacing: -0.055em;
+
+    margin-bottom: 2rem;
+
+    word-break: normal;
+    overflow-wrap: normal;
+    hyphens: none;
+  }
+
+  .hero-title .title-line {
+    display: block;
+
+    width: max-content;
+    max-width: 100%;
+
+    white-space: nowrap;
+
+    word-break: keep-all;
+    overflow-wrap: normal;
+  }
+
+  /* Subtitle */
+
+  .hero-subtitle {
+    max-width: 620px;
+
+    font-size: clamp(1.15rem, 1.5vw, 1.45rem);
+
+    line-height: 1.4;
+
+    margin-bottom: 1.25rem;
+  }
+
+  .hero-bio {
+    max-width: 560px;
+
+    font-size: 1rem;
+
+    line-height: 1.65;
+
+    margin-bottom: 2.2rem;
+  }
+
+  /* Buttons */
+
+  .hero-actions {
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+
+    gap: 1rem;
+
+    flex-wrap: wrap;
+  }
+
+
+  /* ============================================================
+     RIGHT IMAGE
+     ============================================================ */
+
+  .hero-visual-col {
+    width: 100%;
+    min-width: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero-visual-frame {
+    width: 100%;
+
+    /*
+      Image can grow up to 1500px,
+      but column controls its actual size.
+    */
+    max-width: 1500px;
+
+    margin: 0;
+
+    padding: 1rem;
+
+    box-sizing: border-box;
+  }
+
+  .hero-image-wrap {
+    width: 100%;
+
+    aspect-ratio: 16 / 9;
+
+    overflow: hidden;
+  }
+
+  .hero-img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center;
+
+    display: block;
+  }
+
+  .hero-frame-meta {
+    width: 100%;
+
+    margin-top: 0.9rem;
+
+    padding-top: 0.75rem;
+  }
+
+}
+
+
+/* ============================================================
+   LAPTOP — 1024px TO 1200px
+   ============================================================ */
+
+@media (min-width: 769px) and (max-width: 1200px) {
+
+  .container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .hero-sheet {
+    padding: 2.5rem;
+  }
+
+  .hero-grid {
+    /*
+      More width for text.
+    */
+    grid-template-columns: minmax(0, 1.15fr) minmax(350px, 0.85fr);
+
+    gap: 2.5rem;
+  }
+
+  .hero-title {
+    /*
+      Smaller than desktop so the words
+      stay completely visible.
+    */
+    font-size: clamp(4.2rem, 7vw, 6.5rem);
+
+    line-height: 0.87;
+
+    letter-spacing: -0.05em;
+  }
+
+  .hero-subtitle {
+    font-size: 1.15rem;
+  }
+
+  .hero-bio {
+    font-size: 0.95rem;
+  }
+
+  .hero-visual-frame {
+    padding: 0.8rem;
+  }
+
+}
+
+
+/* ============================================================
+   LARGE LAPTOP / DESKTOP — 1201px TO 1500px
+   ============================================================ */
+
+@media (min-width: 1201px) and (max-width: 1500px) {
+
+  .hero-grid {
+    grid-template-columns: minmax(0, 1.08fr) minmax(500px, 0.92fr);
+
+    gap: 3.5rem;
+  }
+
+  .hero-title {
+    font-size: clamp(5.5rem, 7vw, 7.8rem);
+  }
+
+  .hero-visual-frame {
+    max-width: 650px;
+  }
+
+}
+
+
+/* ============================================================
+   MOBILE
+   ============================================================ */
+
+@media (max-width: 768px) {
+
+  .hero-section {
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+  }
+
+  .hero-sheet {
+    width: 100%;
+    max-width: 100%;
+
+    padding: 1.25rem;
+
+    overflow: hidden;
+  }
+
+  .hero-grid {
+
+    /*
+      MOBILE:
+      Text first
+      Image second
+    */
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 2rem;
+
+    width: 100%;
+  }
+
+  .hero-text-col {
+    width: 100%;
+    max-width: 100%;
+
+    order: 1;
+  }
+
+  .hero-visual-col {
+    width: 100%;
+    max-width: 100%;
+
+    order: 2;
+
+    display: block;
+  }
+
+
+  /* ---------- MOBILE TITLE ---------- */
+
+  .hero-title {
+
+    width: 100%;
+    max-width: 100%;
+
+    font-size: clamp(3rem, 13vw, 5rem);
+
+    line-height: 0.86;
+
+    letter-spacing: -0.055em;
+
+    margin-bottom: 1.5rem;
+
+    word-break: normal;
+    overflow-wrap: normal;
+    hyphens: none;
+  }
+
+  .hero-title .title-line {
+
+    display: block;
+
+    width: max-content;
+
+    max-width: 100%;
+
+    white-space: nowrap;
+
+    word-break: keep-all;
+    overflow-wrap: normal;
+  }
+
+
+  /* ---------- MOBILE IMAGE ---------- */
+
+  .hero-visual-frame {
+
+    width: 100%;
+
+    max-width: 1500px;
+
+    margin: 0 auto;
+
+    padding: 0.6rem;
+
+    box-sizing: border-box;
+  }
+
+  .hero-image-wrap {
+
+    width: 100%;
+
+    aspect-ratio: 16 / 9;
+
+    overflow: hidden;
+  }
+
+  .hero-img {
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+  }
+
+  .hero-frame-meta {
+
+    width: 100%;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 0.7rem;
+
+    margin-top: 0.75rem;
+
+    padding-top: 0.7rem;
+  }
+
+
+  /* ---------- MOBILE BUTTONS ---------- */
+
+  .hero-actions {
+
+    width: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: stretch;
+
+    gap: 0.75rem;
+  }
+
+  .hero-actions .btn-primary,
+  .hero-actions .btn-secondary {
+
+    width: 100%;
+
+    justify-content: center;
+  }
+
+
+  /* Hide floating cards */
+
+  .floating-element {
+    display: none !important;
+  }
+}
+
+
+/* ============================================================
+   SMALL PHONE
+   ============================================================ */
+
+@media (max-width: 430px) {
+
+  .hero-sheet {
+    padding: 1rem;
+  }
+
+  .hero-title {
+    font-size: clamp(2.6rem, 13vw, 4rem);
+
+    line-height: 0.87;
+  }
+
+  .hero-title .title-line {
+    white-space: nowrap;
+  }
+
+  .hero-visual-frame {
+    padding: 0.5rem;
+  }
+
+}
