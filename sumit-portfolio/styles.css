@@ -2330,3 +2330,587 @@ h1, h2, h3, h4, .font-display {
     font-size: 0.7rem;
   }
 }
+/* =========================================================
+   GRAPHIC DESIGNER PORTFOLIO — CREATIVE OVERRIDE
+   ========================================================= */
+
+/* ---------- GLOBAL CREATIVE FEEL ---------- */
+
+body {
+  background:
+    radial-gradient(
+      circle at 15% 10%,
+      rgba(255,255,255,0.18),
+      transparent 28%
+    ),
+    var(--bg-sand);
+}
+
+::selection {
+  background: var(--text-primary);
+  color: var(--surface-cream);
+}
+
+
+/* ---------- HEADER ---------- */
+
+.site-header {
+  background: rgba(194, 165, 130, 0.88);
+  backdrop-filter: blur(14px);
+}
+
+.brand-title {
+  font-size: 1.7rem;
+  letter-spacing: -0.06em;
+}
+
+.brand-subtitle {
+  font-size: 0.62rem;
+}
+
+
+/* =========================================================
+   HERO — MAKE IT CLEAR THAT THIS IS A GRAPHIC DESIGNER
+   ========================================================= */
+
+.hero-sheet {
+  min-height: 78vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background:
+    linear-gradient(
+      135deg,
+      var(--surface-cream) 0%,
+      #eee7d9 55%,
+      #dfcfb8 100%
+    );
+}
+
+.hero-sheet::after {
+  content: "GRAPHIC DESIGN";
+  position: absolute;
+  right: -30px;
+  bottom: -45px;
+  font-family: var(--font-display);
+  font-size: clamp(5rem, 14vw, 13rem);
+  font-weight: 800;
+  line-height: 0.8;
+  color: rgba(17,17,17,0.045);
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+.hero-grid {
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: clamp(2rem, 6vw, 6rem);
+}
+
+.hero-super-label {
+  font-size: 0.75rem;
+  font-weight: 800;
+  color: var(--accent-brown);
+}
+
+.hero-super-label::before {
+  content: "●";
+  color: var(--text-primary);
+}
+
+
+/* Main designer title */
+
+.hero-title {
+  font-size: clamp(4rem, 9.5vw, 9rem);
+  letter-spacing: -0.065em;
+  line-height: 0.79;
+  margin-bottom: 1.8rem;
+}
+
+.hero-title .title-line:last-child {
+  color: var(--accent-brown);
+}
+
+
+/* Designer description */
+
+.hero-subtitle {
+  font-family: var(--font-display);
+  font-size: clamp(1.3rem, 2.3vw, 1.8rem);
+  max-width: 650px;
+  line-height: 1.15;
+}
+
+.hero-bio {
+  font-size: 0.98rem;
+  max-width: 580px;
+}
+
+
+/* Graphic designer label */
+
+.hero-text-col::after {
+  content: "GRAPHIC DESIGNER  /  VISUAL DESIGN  /  CREATIVE DIRECTION";
+  display: block;
+  margin-top: 2.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  color: var(--text-muted);
+}
+
+
+/* =========================================================
+   HERO IMAGE
+   ========================================================= */
+
+.hero-visual-frame {
+  padding: 0.75rem;
+  background: #111;
+  border-color: #111;
+  transform: rotate(1.2deg);
+}
+
+.hero-visual-frame:hover {
+  transform: rotate(-1deg) scale(1.015);
+}
+
+.hero-image-wrap {
+  border-color: #111;
+  background: #222;
+}
+
+.hero-frame-meta {
+  color: #f3efe4;
+  border-color: #444;
+}
+
+.hero-frame-meta .meta-label {
+  color: #999;
+}
+
+.hero-frame-meta .meta-value {
+  color: #f3efe4;
+}
+
+
+/* =========================================================
+   SECTION HEADINGS
+   ========================================================= */
+
+.editorial-section-title {
+  font-size: clamp(3rem, 7vw, 7rem);
+  letter-spacing: -0.06em;
+}
+
+.editorial-section-title::first-letter {
+  color: var(--accent-brown);
+}
+
+
+/* =========================================================
+   SELECTED WORK — MAIN FOCUS
+   ========================================================= */
+
+.work-sheet {
+  padding-top: clamp(3rem, 6vw, 6rem);
+  padding-bottom: clamp(4rem, 8vw, 8rem);
+}
+
+.portfolio-header-wrap {
+  position: relative;
+}
+
+.portfolio-header-wrap::after {
+  content: "VISUAL ARCHIVE / 01";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.15em;
+  color: var(--text-muted);
+}
+
+
+/* ---------- FILTERS ---------- */
+
+.filter-bar {
+  gap: 0;
+  justify-content: flex-start;
+}
+
+.filter-btn {
+  padding: 0.8rem 1.2rem;
+  border: 1px solid transparent;
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.filter-btn:hover {
+  background: var(--text-primary);
+  color: var(--surface-cream);
+}
+
+.filter-btn.active {
+  background: var(--text-primary);
+  color: var(--surface-cream);
+}
+
+.filter-btn.active::after {
+  display: none;
+}
+
+
+/* =========================================================
+   CREATIVE PORTFOLIO GRID
+   ========================================================= */
+
+.portfolio-grid {
+  gap: clamp(1.25rem, 2.5vw, 2.5rem);
+  margin-top: 4rem;
+}
+
+
+/* Cards */
+
+.project-card {
+  padding: 0.85rem;
+  border: 1px solid #111;
+  background: #faf7f0;
+  box-shadow: 0 12px 30px rgba(20,15,10,0.10);
+}
+
+.project-card:hover {
+  transform: translateY(-10px) rotate(-0.4deg);
+  box-shadow: 0 30px 70px rgba(20,15,10,0.18);
+}
+
+
+/* Project image */
+
+.project-image-box {
+  margin-bottom: 1.1rem;
+  border: 1px solid #111;
+  background: #111;
+}
+
+.project-img,
+.project-img-contain {
+  transition:
+    transform 0.7s cubic-bezier(0.16,1,0.3,1),
+    filter 0.4s ease;
+}
+
+.project-card:hover .project-img {
+  transform: scale(1.05);
+}
+
+.project-card:hover .project-img-contain {
+  transform: scale(1.035);
+}
+
+
+/* Project title */
+
+.project-title {
+  font-size: clamp(1.5rem, 2.8vw, 2.6rem);
+  letter-spacing: -0.055em;
+  margin-bottom: 0.5rem;
+}
+
+.project-desc {
+  font-size: 0.88rem;
+  max-width: 600px;
+}
+
+
+/* Project footer */
+
+.project-footer-action {
+  padding-top: 0.8rem;
+  margin-top: 0.5rem;
+}
+
+
+/* =========================================================
+   POSTER DESIGN CARDS
+   ========================================================= */
+
+.project-card.span-5 .project-image-box,
+.project-card.span-4 .project-image-box,
+.project-card.span-3 .project-image-box {
+  background: #111;
+}
+
+.project-card.span-5 .project-title,
+.project-card.span-4 .project-title,
+.project-card.span-3 .project-title {
+  font-size: clamp(1.35rem, 2vw, 2rem);
+}
+
+
+/* =========================================================
+   FEATURED PROJECT
+   ========================================================= */
+
+.project-card.featured-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.project-card.featured-card::before {
+  content: "FEATURED PROJECT";
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  z-index: 5;
+  padding: 0.45rem 0.7rem;
+  background: var(--text-primary);
+  color: var(--surface-cream);
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+.featured-badge {
+  display: none;
+}
+
+
+/* =========================================================
+   ABOUT — MORE DESIGNER-LIKE
+   ========================================================= */
+
+.about-lead-text {
+  font-family: var(--font-display);
+  font-size: clamp(1.6rem, 3vw, 2.5rem);
+  line-height: 1.05;
+  letter-spacing: -0.035em;
+}
+
+.about-body-text {
+  max-width: 650px;
+}
+
+
+/* About portrait */
+
+.about-portrait-wrap {
+  transform: rotate(-1deg);
+  transition: transform 0.4s ease;
+}
+
+.about-portrait-wrap:hover {
+  transform: rotate(0deg) translateY(-5px);
+}
+
+
+/* =========================================================
+   DESIGN PROCESS
+   ========================================================= */
+
+.process-step-item {
+  position: relative;
+  padding: 1.5rem;
+  background: rgba(255,255,255,0.18);
+  border: 1px solid var(--border-black);
+}
+
+.step-number {
+  font-size: 3.8rem;
+  color: var(--accent-brown);
+}
+
+.step-title {
+  font-size: 1.4rem;
+}
+
+
+/* =========================================================
+   SKILLS — VISUAL DESIGN STYLE
+   ========================================================= */
+
+.skill-row {
+  padding: 1.5rem 0;
+}
+
+.skill-name {
+  font-size: clamp(1.8rem, 3.5vw, 3rem);
+  transition: transform 0.3s ease;
+}
+
+.skill-row:hover .skill-name {
+  transform: translateX(10px);
+}
+
+.skill-indicator::before {
+  content: "✦ ";
+  color: var(--accent-brown);
+}
+
+
+/* =========================================================
+   TOOLS
+   ========================================================= */
+
+.tool-tag {
+  border-radius: 0;
+  padding: 1rem 1.2rem;
+}
+
+.tool-tag:hover {
+  transform: translateX(8px);
+}
+
+
+/* =========================================================
+   PHILOSOPHY
+   ========================================================= */
+
+.philosophy-box {
+  background:
+    linear-gradient(
+      135deg,
+      #b59877,
+      #c8aa86
+    );
+}
+
+.philosophy-quote {
+  font-size: clamp(3rem, 7vw, 7rem);
+  letter-spacing: -0.065em;
+}
+
+
+/* =========================================================
+   CONTACT
+   ========================================================= */
+
+.contact-sheet {
+  background:
+    linear-gradient(
+      135deg,
+      var(--surface-cream),
+      #e5d8c4
+    );
+}
+
+.contact-massive-heading {
+  font-size: clamp(4rem, 9vw, 9rem);
+  letter-spacing: -0.065em;
+}
+
+.direct-email-link {
+  transition:
+    transform 0.25s ease,
+    color 0.25s ease;
+}
+
+.direct-email-link:hover {
+  transform: translateX(8px);
+}
+
+
+/* =========================================================
+   CREATIVE DECORATIVE ELEMENTS
+   ========================================================= */
+
+.paper-sheet {
+  overflow: hidden;
+}
+
+.paper-sheet::before {
+  content: "+";
+  font-size: 0.8rem;
+}
+
+.paper-sheet::after {
+  content: "+";
+  font-size: 0.8rem;
+}
+
+
+/* =========================================================
+   MOBILE GRAPHIC DESIGNER VERSION
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+  .hero-sheet {
+    min-height: auto;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .hero-title {
+    font-size: clamp(3.2rem, 16vw, 5.5rem);
+    line-height: 0.82;
+  }
+
+  .hero-sheet::after {
+    font-size: 5rem;
+    right: -20px;
+    bottom: 10px;
+  }
+
+  .hero-visual-frame {
+    transform: rotate(0deg);
+  }
+
+  .hero-visual-frame:hover {
+    transform: none;
+  }
+
+  .portfolio-header-wrap::after {
+    position: static;
+    display: block;
+    margin-top: 1rem;
+  }
+
+  .filter-bar {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    padding-bottom: 0.8rem;
+  }
+
+  .filter-btn {
+    white-space: nowrap;
+  }
+
+  .project-card:hover {
+    transform: translateY(-4px);
+  }
+
+  .contact-massive-heading {
+    font-size: clamp(3.5rem, 15vw, 6rem);
+  }
+}
+
+
+/* =========================================================
+   EXTRA SMALL
+   ========================================================= */
+
+@media (max-width: 420px) {
+
+  .hero-title {
+    font-size: clamp(2.8rem, 15vw, 4.5rem);
+  }
+
+  .hero-subtitle {
+    font-size: 1.15rem;
+  }
+
+  .editorial-section-title {
+    font-size: clamp(2.5rem, 12vw, 4rem);
+  }
+
+  .project-card {
+    padding: 10px;
+  }
+}
