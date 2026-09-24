@@ -2399,13 +2399,9 @@ h1, h2, h3, h4, .font-display {
   color: #A48767 !important;
 }
 
-/* =========================================================
-   HERO IMAGE — WIDER FRAME
-   ========================================================= */
-
 .hero-visual-frame {
-  width: min(1800px, 88vw) !important;
-  max-width: 900px !important;
+  width: min(1100px, 94vw) !important;
+  max-width: 1100px !important;
 
   margin: 12px auto 0 !important;
 
@@ -2423,30 +2419,22 @@ h1, h2, h3, h4, .font-display {
 
 .hero-image-wrap {
   width: 100% !important;
-
   height: auto !important;
   aspect-ratio: auto !important;
-
   overflow: hidden !important;
-
-  background: #E2D9CC !important;
 }
 
 .hero-img {
   width: 100% !important;
   height: auto !important;
-
   display: block !important;
 
   object-fit: contain !important;
   object-position: center !important;
 
-  max-width: 100% !important;
-
   transform: none !important;
 }
 
-/* Don't zoom image */
 .hero-visual-frame:hover .hero-img {
   transform: none !important;
 }
