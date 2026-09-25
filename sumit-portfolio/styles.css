@@ -2925,42 +2925,75 @@ h1, h2, h3, h4, .font-display {
   }
 }
 /* ============================================================
-   FINAL — SMALLER HERO TITLE
+   FINAL HERO TITLE FIX
+   SMALL + FIT INSIDE LEFT COLUMN
    ============================================================ */
 
 @media (min-width: 769px) {
+
   .hero-title {
-    font-size: 4.8rem !important;
+    font-size: 4.2rem !important;
     line-height: 0.88 !important;
     letter-spacing: -0.045em !important;
-    width: max-content !important;
+
+    /* IMPORTANT */
+    width: 100% !important;
     max-width: 100% !important;
+
+    word-break: normal !important;
+    overflow-wrap: normal !important;
+    hyphens: none !important;
+
+    position: relative;
+    z-index: 10;
   }
 
   .hero-title .title-line {
     display: block !important;
+
+    /* IMPORTANT */
+    width: 100% !important;
+    max-width: 100% !important;
+
     white-space: nowrap !important;
-    width: max-content !important;
   }
 }
 
-/* Laptop */
+
+/* ============================================================
+   LAPTOP
+   ============================================================ */
+
 @media (min-width: 769px) and (max-width: 1200px) {
+
+  .hero-title {
+    font-size: 3.6rem !important;
+  }
+
+}
+
+
+/* ============================================================
+   DESKTOP
+   ============================================================ */
+
+@media (min-width: 1201px) and (max-width: 1500px) {
+
   .hero-title {
     font-size: 4rem !important;
   }
+
 }
 
-/* Large laptop / desktop */
-@media (min-width: 1201px) and (max-width: 1500px) {
-  .hero-title {
-    font-size: 4.5rem !important;
-  }
-}
 
-/* Large desktop */
+/* ============================================================
+   LARGE DESKTOP
+   ============================================================ */
+
 @media (min-width: 1501px) {
+
   .hero-title {
-    font-size: 4.8rem !important;
+    font-size: 4.2rem !important;
   }
+
 }
