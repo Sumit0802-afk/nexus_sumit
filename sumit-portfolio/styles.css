@@ -2925,48 +2925,42 @@ h1, h2, h3, h4, .font-display {
   }
 }
 /* ============================================================
-   FINAL — SMALLER GRAPHIC DESIGNER TITLE
+   FINAL — SMALLER HERO TITLE
    ============================================================ */
 
 @media (min-width: 769px) {
   .hero-title {
-    font-size: clamp(4.2rem, 5.4vw, 6.2rem) !important;
+    font-size: 4.8rem !important;
     line-height: 0.88 !important;
     letter-spacing: -0.045em !important;
-
     width: max-content !important;
     max-width: 100% !important;
-
-    word-break: normal !important;
-    overflow-wrap: normal !important;
-    hyphens: none !important;
   }
 
   .hero-title .title-line {
     display: block !important;
     white-space: nowrap !important;
     width: max-content !important;
-    max-width: 100% !important;
   }
 }
 
 /* Laptop */
 @media (min-width: 769px) and (max-width: 1200px) {
   .hero-title {
+    font-size: 4rem !important;
+  }
+}
+
+/* Large laptop / desktop */
+@media (min-width: 1201px) and (max-width: 1500px) {
+  .hero-title {
     font-size: 4.5rem !important;
   }
 }
 
-/* Large laptop */
-@media (min-width: 1201px) and (max-width: 1500px) {
-  .hero-title {
-    font-size: 5rem !important;
-  }
-}
-
-/* Desktop */
+/* Large desktop */
 @media (min-width: 1501px) {
   .hero-title {
-    font-size: 5.6rem !important;
+    font-size: 4.8rem !important;
   }
 }
