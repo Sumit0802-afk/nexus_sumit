@@ -20,7 +20,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/HTML5-000000?style=flat-square&logo=html5&logoColor=E34F26" alt="HTML5" />
-  <img src="https://img.shields.io/badge/CSS3-000000?style=flat-square&logo=css3&logoColor=1572B6" alt="CSS3" />
+  <img src="https://img.shields.io/badge/CSS3-000000?style=flat-square&logo=css&logoColor=663399" alt="CSS3" />
   <img src="https://img.shields.io/badge/JavaScript-000000?style=flat-square&logo=javascript&logoColor=F7DF1E" alt="JavaScript" />
   <img src="https://img.shields.io/badge/No_frameworks-000000?style=flat-square" alt="No frameworks" />
   <img src="https://img.shields.io/badge/No_build_step-000000?style=flat-square" alt="No build step" />
