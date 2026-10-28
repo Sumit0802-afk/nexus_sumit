@@ -2895,7 +2895,7 @@ h1, h2, h3, h4, .font-display {
   }
   
   .contact-layout {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
     gap: 2.5rem;
   }
 
@@ -3024,7 +3024,7 @@ h1, h2, h3, h4, .font-display {
   }
 
   .hero-title {
-    font-size: clamp(2rem, 9.5vw, 4.8rem);
+    font-size: clamp(1.8rem, 8.6vw, 4.8rem);
     line-height: 0.92;
     margin-bottom: 1.25rem;
   }
@@ -3333,7 +3333,7 @@ h1, h2, h3, h4, .font-display {
   }
 
   .philosophy-quote {
-    font-size: clamp(1.75rem, 7vw, 3rem);
+    font-size: clamp(1.2rem, 6.2vw, 3rem);
     line-height: 1;
     margin-bottom: 1.5rem;
   }
@@ -3409,12 +3409,12 @@ h1, h2, h3, h4, .font-display {
 
   /* Section 07: Contact */
   .contact-layout {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
     gap: 2rem;
   }
 
   .contact-massive-heading {
-    font-size: clamp(2.4rem, 10vw, 4rem);
+    font-size: clamp(1.6rem, 7.6vw, 4rem);
     line-height: 0.95;
     margin-bottom: 1.25rem;
   }
@@ -3518,11 +3518,11 @@ h1, h2, h3, h4, .font-display {
   }
 
   .hero-title {
-    font-size: clamp(1.9rem, 9.5vw, 3.4rem);
+    font-size: clamp(1.6rem, 8.6vw, 3.4rem);
   }
 
   .editorial-section-title {
-    font-size: clamp(1.9rem, 10vw, 2.6rem);
+    font-size: clamp(1.25rem, 6.8vw, 2.6rem);
   }
 
   .stats-grid {
@@ -3563,11 +3563,11 @@ h1, h2, h3, h4, .font-display {
   }
 
   .hero-title {
-    font-size: 2.1rem;
+    font-size: 8.2vw;
   }
 
   .editorial-section-title {
-    font-size: 1.75rem;
+    font-size: 6.6vw;
   }
 
   .stats-grid {
@@ -4727,4 +4727,24 @@ html.intro-first .hero-title {
 }
 @media (max-width: 768px) {
   .modal-gallery { grid-template-columns: 1fr; }
+}
+
+/* Mobile safety net: never let a long display word push the page sideways */
+@media (max-width: 768px) {
+  h1, h2, h3 {
+    overflow-wrap: break-word;
+  }
+
+  /* Let grid/flex children shrink below their content width */
+  [class*="-grid"] > *,
+  [class*="-layout"] > *,
+  .skills-wrap,
+  .skill-row > * {
+    min-width: 0;
+  }
+
+  .skill-row {
+    flex-wrap: wrap;
+    gap: 0.25rem 1rem;
+  }
 }
