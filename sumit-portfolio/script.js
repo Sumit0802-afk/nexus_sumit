@@ -89,6 +89,24 @@ document.addEventListener('DOMContentLoaded', () => {
       creativeDirection: 'Deep black canvas with warm golden-bronze 3D typographic sculpture as the hero centerpiece, paired with a sculpted silver chrome falcon eagle emblem as the official brandmark. Minimal layout with strong editorial micro-labels and a premium SaaS aesthetic.',
       process: 'Vector brandmark development, wireframing, component hierarchy mapping, visual polish, and typographic refinement. Final visual optimized for both desktop and responsive breakpoints.'
     },
+    'project-itinera': {
+      title: 'ITINERA — SMART TRAVEL PLANNER WEB APP',
+      client: 'PRODUCT DESIGN // PERSONAL PROJECT',
+      category: 'UI/UX // WEB APP // DASHBOARD',
+      year: '2026',
+      refCode: 'REF: APP-2026/ITN',
+      coverImg: 'assets/work-itinera-01-itinerary.jpg',
+      detailImg: 'assets/work-itinera-02-mapview.jpg',
+      gallery: [
+        { src: 'assets/work-itinera-03-overview.jpg', caption: 'Overview — trips, stats & quick start' },
+        { src: 'assets/work-itinera-04-budget.jpg', caption: 'Pack & Budget — planned vs actual, per-person split' },
+        { src: 'assets/work-itinera-05-discover.jpg', caption: 'Discover — curated destinations with filters' },
+        { src: 'assets/work-itinera-06-safety.jpg', caption: 'Weather & Safety — forecasts and road advisories' }
+      ],
+      overview: 'Itinera is a travel planning web app that keeps the whole journey in one place — day-by-day itineraries with timed stops, route maps, budgets, curated destinations, and weather and road advisories. The Manali Adventure trip is used as the showcase scenario throughout.',
+      creativeDirection: 'A calm deep forest-green sidebar and accents over a warm off-white canvas, with cinematic mountain hero imagery. Category-coded pills and icons, generous card spacing, and clear typographic hierarchy keep dense trip data scannable. Honest-data patterns like "UNVERIFIED" and "ESTIMATE" tags build trust.',
+      process: 'Information architecture for 12 app sections, timeline and list/map itinerary views, budget visualisation (donut + bar charts), discovery card grid, safety and advisory layouts, and a side-panel travel copilot — all built on a consistent component system.'
+    },
     'project-ehsaas': {
       title: 'अहसास — STAY संस्कारी // CULTURAL COLLAGE SERIES',
       client: 'CULTURAL ARTWORK // PERSONAL SERIES',
@@ -539,6 +557,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const modalRefCode = document.getElementById('modalRefCode');
   const modalCoverImg = document.getElementById('modalCoverImg');
   const modalDetailImg = document.getElementById('modalDetailImg');
+  const modalGallery = document.getElementById('modalGallery');
   const modalOverviewText = document.getElementById('modalOverviewText');
   const modalDirectionText = document.getElementById('modalDirectionText');
   const modalProcessText = document.getElementById('modalProcessText');
@@ -556,6 +575,20 @@ document.addEventListener('DOMContentLoaded', () => {
     modalCoverImg.alt = `${data.title} Cover Artwork`;
     modalDetailImg.src = data.detailImg;
     modalDetailImg.alt = `${data.title} Process Artifact`;
+    modalGallery.innerHTML = '';
+    modalGallery.hidden = !data.gallery;
+    (data.gallery || []).forEach(({ src, caption }) => {
+      const fig = document.createElement('figure');
+      fig.className = 'modal-gallery-item';
+      const img = document.createElement('img');
+      img.src = src;
+      img.alt = `${data.title} — ${caption}`;
+      img.loading = 'lazy';
+      const cap = document.createElement('figcaption');
+      cap.textContent = caption;
+      fig.append(img, cap);
+      modalGallery.appendChild(fig);
+    });
     modalOverviewText.textContent = data.overview;
     modalDirectionText.textContent = data.creativeDirection;
     modalProcessText.textContent = data.process;
