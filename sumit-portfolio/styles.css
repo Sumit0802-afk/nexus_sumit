@@ -102,60 +102,6 @@ body {
   .paper-grain-overlay { animation: none; opacity: 0.04; }
 }
 
-/* Custom Interactive Cursor (Desktop) */
-.custom-cursor {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  background-color: var(--text-primary);
-  pointer-events: none;
-  z-index: 9999;
-  transform: translate(-50%, -50%);
-  transition: width 0.25s cubic-bezier(0.16, 1, 0.3, 1),
-              height 0.25s cubic-bezier(0.16, 1, 0.3, 1),
-              background-color 0.2s ease,
-              opacity 0.2s ease;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: var(--font-mono);
-  font-size: 0.65rem;
-  font-weight: 700;
-  letter-spacing: 0.1em;
-  color: var(--surface-cream);
-  text-transform: uppercase;
-}
-
-.custom-cursor-follower {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  border: 1px solid rgba(17, 17, 17, 0.4);
-  pointer-events: none;
-  z-index: 9997;
-  transform: translate(-50%, -50%);
-  transition: transform 0.12s ease-out, width 0.25s ease, height 0.25s ease, border-color 0.2s ease;
-}
-
-.custom-cursor.hovering-project {
-  width: 68px;
-  height: 68px;
-  background-color: var(--text-primary);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-}
-
-.custom-cursor.hovering-link {
-  width: 32px;
-  height: 32px;
-  background-color: rgba(17, 17, 17, 0.85);
-}
-
 /* Typography Utilities */
 h1, h2, h3, h4, .font-display {
   font-family: var(--font-display);
@@ -2964,12 +2910,6 @@ h1, h2, h3, h4, .font-display {
   :root {
     --site-padding: 1.25rem;
     --section-spacing: 3.5rem;
-  }
-
-  /* Disable custom cursor on touch devices */
-  .custom-cursor,
-  .custom-cursor-follower {
-    display: none !important;
   }
 
   /* Mobile Navigation Header */

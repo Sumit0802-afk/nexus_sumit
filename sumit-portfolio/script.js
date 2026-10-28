@@ -1,6 +1,6 @@
 /* ==========================================================================
    SUMIT — GRAPHIC DESIGNER PORTFOLIO
-   Interactive Logic: Custom Cursor, Case Study Modal, Filter, Parallax
+   Interactive Logic: Case Study Modal, Filter, Parallax
    ========================================================================== */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -459,57 +459,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   };
 
-
-  // --- 1. Custom Interactive Cursor (Desktop) ---
-  const cursor = document.getElementById('customCursor');
-  const follower = document.getElementById('cursorFollower');
-  let mouseX = -100, mouseY = -100;
-  let followerX = -100, followerY = -100;
-
-  if (window.innerWidth > 768 && cursor && follower) {
-    window.addEventListener('mousemove', (e) => {
-      mouseX = e.clientX;
-      mouseY = e.clientY;
-      cursor.style.left = `${mouseX}px`;
-      cursor.style.top = `${mouseY}px`;
-    });
-
-    // Smooth lerp follower
-    const renderCursor = () => {
-      followerX += (mouseX - followerX) * 0.18;
-      followerY += (mouseY - followerY) * 0.18;
-      follower.style.left = `${followerX}px`;
-      follower.style.top = `${followerY}px`;
-      requestAnimationFrame(renderCursor);
-    };
-    renderCursor();
-
-    // Hover states for projects
-    document.querySelectorAll('.project-card').forEach(card => {
-      card.addEventListener('mouseenter', () => {
-        cursor.classList.add('hovering-project');
-        cursor.textContent = 'VIEW';
-        follower.style.transform = 'translate(-50%, -50%) scale(1.4)';
-        follower.style.borderColor = '#111111';
-      });
-      card.addEventListener('mouseleave', () => {
-        cursor.classList.remove('hovering-project');
-        cursor.textContent = '';
-        follower.style.transform = 'translate(-50%, -50%) scale(1)';
-        follower.style.borderColor = 'rgba(17, 17, 17, 0.4)';
-      });
-    });
-
-    // Hover states for links and buttons
-    document.querySelectorAll('a, button, .filter-btn, .tool-tag').forEach(el => {
-      el.addEventListener('mouseenter', () => {
-        cursor.classList.add('hovering-link');
-      });
-      el.addEventListener('mouseleave', () => {
-        cursor.classList.remove('hovering-link');
-      });
-    });
-  }
 
   // --- 2. Portfolio Category Filtering ---
   const filterBtns = document.querySelectorAll('.filter-btn');

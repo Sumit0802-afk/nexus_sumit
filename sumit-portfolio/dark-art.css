@@ -44,7 +44,6 @@ body {
   font-family: var(--font-serif);
   min-height: 100vh;
   min-height: 100svh;
-  cursor: none;
   overflow-x: hidden;
   max-width: 100vw;
   width: 100%;
@@ -54,7 +53,7 @@ body {
 
 img { display: block; max-width: 100%; height: auto; }
 a { text-decoration: none; color: inherit; }
-button { background: none; border: none; cursor: none; font: inherit; }
+button { background: none; border: none; cursor: pointer; font: inherit; }
 
 /* ── Custom Cursor ──────────────────────────────────────────────────────── */
 .dac-cursor {
@@ -176,7 +175,7 @@ button { background: none; border: none; cursor: none; font: inherit; }
   color: var(--dac-text-secondary);
   text-transform: uppercase;
   transition: color var(--dac-transition-fast);
-  cursor: none;
+  cursor: pointer;
 }
 
 .dac-nav-back:hover {
@@ -422,7 +421,7 @@ button { background: none; border: none; cursor: none; font: inherit; }
 .dac-artwork-item {
   break-inside: avoid;
   margin-bottom: 2.5rem;
-  cursor: none;
+  cursor: pointer;
   outline: none;
 }
 
@@ -590,7 +589,7 @@ button { background: none; border: none; cursor: none; font: inherit; }
   border-bottom: 1px solid var(--dac-border);
   padding-bottom: 0.2rem;
   transition: color var(--dac-transition-fast), border-color var(--dac-transition-fast);
-  cursor: none;
+  cursor: pointer;
 }
 
 .dac-footer-back-link:hover {
@@ -632,7 +631,7 @@ button { background: none; border: none; cursor: none; font: inherit; }
   -webkit-backdrop-filter: blur(8px);
   opacity: 0;
   transition: opacity 0.45s ease;
-  cursor: none;
+  cursor: pointer;
 }
 
 .dac-lightbox.is-open .dac-lb-backdrop { opacity: 1; }
@@ -663,7 +662,7 @@ button { background: none; border: none; cursor: none; font: inherit; }
   z-index: 10;
   opacity: 0;
   transition: opacity var(--dac-transition), color var(--dac-transition-fast);
-  cursor: none;
+  cursor: pointer;
 }
 
 .dac-lightbox.is-open .dac-lb-close { opacity: 1; }
@@ -682,7 +681,7 @@ button { background: none; border: none; cursor: none; font: inherit; }
   z-index: 10;
   opacity: 0;
   transition: opacity var(--dac-transition), color var(--dac-transition-fast), transform 0.3s ease;
-  cursor: none;
+  cursor: pointer;
 }
 
 .dac-lightbox.is-open .dac-lb-nav { opacity: 1; }

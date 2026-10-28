@@ -29,8 +29,6 @@
   let isLightboxOpen = false;
 
   /* ── DOM References ──────────────────────────────────────────────────── */
-  const cursor         = document.getElementById('dacCursor');
-  const cursorFollower = document.getElementById('dacCursorFollower');
   const lightbox       = document.getElementById('dacLightbox');
   const lbBackdrop     = document.getElementById('dacLbBackdrop');
   const lbClose        = document.getElementById('dacLbClose');
@@ -42,43 +40,6 @@
   const lbCapTitle     = document.getElementById('dacLbCapTitle');
   const lbCapCounter   = document.getElementById('dacLbCapCounter');
   const artworkItems   = document.querySelectorAll('.dac-artwork-item');
-
-  /* ── Custom Cursor (Desktop Only) ─────────────────────────────────────── */
-  const isTouchDevice = window.matchMedia && window.matchMedia('(hover: none) and (pointer: coarse)').matches;
-  if (!isTouchDevice && cursor && cursorFollower) {
-    let mouseX = -100, mouseY = -100;
-    let followerX = -100, followerY = -100;
-
-    document.addEventListener('mousemove', function (e) {
-      mouseX = e.clientX;
-      mouseY = e.clientY;
-      cursor.style.left = mouseX + 'px';
-      cursor.style.top  = mouseY + 'px';
-    });
-
-    // Smooth follower via RAF
-    function animateFollower() {
-      followerX += (mouseX - followerX) * 0.12;
-      followerY += (mouseY - followerY) * 0.12;
-      cursorFollower.style.left = followerX + 'px';
-      cursorFollower.style.top  = followerY + 'px';
-      requestAnimationFrame(animateFollower);
-    }
-    animateFollower();
-
-    // Expand follower on hover over interactive elements
-    document.querySelectorAll('.dac-artwork-item, .dac-nav-back, .dac-lb-close, .dac-lb-nav, .dac-footer-back-link, button, a').forEach(function(el) {
-      el.addEventListener('mouseenter', function () {
-        cursorFollower.classList.add('expanded');
-      });
-      el.addEventListener('mouseleave', function () {
-        cursorFollower.classList.remove('expanded');
-      });
-    });
-  } else {
-    if (cursor) cursor.style.display = 'none';
-    if (cursorFollower) cursorFollower.style.display = 'none';
-  }
 
   /* ── Lightbox ────────────────────────────────────────────────────────── */
   function openLightbox(index) {
