@@ -113,12 +113,12 @@ document.addEventListener('DOMContentLoaded', () => {
       category: 'UI/UX // WEB APP // DASHBOARD',
       year: '2026',
       refCode: 'REF: APP-2026/KRL',
-      coverImg: 'assets/work-kernellab-01-tools.jpg',
+      coverImg: 'assets/work-kernellab-05-overview.jpg',
       detailImg: 'assets/work-kernellab-02-os-mechanisms.jpg',
       gallery: [
         { src: 'assets/work-kernellab-03-containers-vs-vms.jpg', caption: 'Containers vs VMs — stack diagrams and feature table' },
         { src: 'assets/work-kernellab-04-containers.jpg', caption: 'Containers — simulated instance management' },
-        { src: 'assets/work-kernellab-05-overview.jpg', caption: 'Overview — system command centre with live metrics' }
+        { src: 'assets/work-kernellab-01-tools.jpg', caption: 'Tools & Applications — Docker, Podman, LXC, Kubernetes' }
       ],
       overview: 'KernelLab is an educational web dashboard for an Operating Systems course that explains lightweight virtualization by letting people explore it. Users manage simulated containers, inspect Linux namespaces and cgroups, compare containers with virtual machines, and see how real tools like Docker, Podman, LXC and Kubernetes fit in.',
       creativeDirection: 'A near-black command-centre interface with a single crimson accent used for state, focus and live signals. Monospace numerals for metrics, quiet card borders and a persistent sidebar keep a technical subject calm and readable, while clear "simulated" labels keep it honest.',
