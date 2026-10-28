@@ -124,6 +124,24 @@ document.addEventListener('DOMContentLoaded', () => {
       creativeDirection: 'A near-black command-centre interface with a single crimson accent used for state, focus and live signals. Monospace numerals for metrics, quiet card borders and a persistent sidebar keep a technical subject calm and readable, while clear "simulated" labels keep it honest.',
       process: 'Information architecture across 11 learning modules, dashboard KPI cards and trend charts, interactive namespace selector with per-container views, layered architecture diagrams, a data table with inline actions, and a reusable dark component system.'
     },
+    'project-nexora': {
+      title: 'NEXORA — HOME DESIGN STUDIO WEB APP',
+      client: 'PRODUCT DESIGN // PERSONAL PROJECT',
+      category: 'UI/UX // WEB APP // ARCHITECTURE TOOL',
+      year: '2026',
+      refCode: 'REF: APP-2026/NXR',
+      coverImg: 'assets/work-nexora-01-home.jpg',
+      detailImg: 'assets/work-nexora-02-design-brief.jpg',
+      gallery: [
+        { src: 'assets/work-nexora-03-2d-editor.jpg', caption: '2D Editor — plot canvas, tools and properties' },
+        { src: 'assets/work-nexora-04-design-library.jpg', caption: 'Design Library — 1,200 editable layouts with filters' },
+        { src: 'assets/work-nexora-05-profile.jpg', caption: 'Profile — account, password and preferences' },
+        { src: 'assets/work-nexora-06-sign-in.jpg', caption: 'Sign in — split-card welcome screen' }
+      ],
+      overview: 'NEXORA is a home design web app that takes people from an idea to a floor plan. A guided brief collects plot size, floors and rooms, the app generates validated layouts, and users refine them in a 2D editor, browse a library of 1,200 editable plans, and preview their home in 3D.',
+      creativeDirection: 'Warm ivory surfaces with a deep indigo brand colour and lavender accents, paired with real architectural photography and isometric plan renders. Large, confident headlines and soft rounded cards make a technical tool feel approachable and aspirational.',
+      process: 'User flow from brief to layout to edit to 3D, a four-step guided onboarding, editor toolbar and properties panel, design library cards with filters and favourites, account and preference screens, and an authentication screen — all on one consistent component system.'
+    },
     'project-ehsaas': {
       title: 'अहसास — STAY संस्कारी // CULTURAL COLLAGE SERIES',
       client: 'CULTURAL ARTWORK // PERSONAL SERIES',
