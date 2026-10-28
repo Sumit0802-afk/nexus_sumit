@@ -85,6 +85,14 @@ document.addEventListener('DOMContentLoaded', () => {
       refCode: 'REF: WEB-2025/FLN',
       coverImg: 'assets/work-falcon-website.png',
       detailImg: 'assets/falcon-logo.png',
+      gallery: [
+        { src: 'assets/work-falcon-04-canvas-editor.jpg', caption: 'Canvas Editor — poster design with QR code tool' },
+        { src: 'assets/work-falcon-05-email-builder.jpg', caption: 'Email Builder — blocks, canvas and settings' },
+        { src: 'assets/work-falcon-01-poster-templates.jpg', caption: 'Poster Templates — editable designs by category' },
+        { src: 'assets/work-falcon-02-email-templates.jpg', caption: 'Email Templates — categories and tags' },
+        { src: 'assets/work-falcon-03-ai-generator.jpg', caption: 'AI Generator — prompt to poster with reference controls' },
+        { src: 'assets/work-falcon-06-login.jpg', caption: 'Login — split-card sign in screen' }
+      ],
       overview: 'A high-fidelity UI design, visual concept, and aerodynamic brand identity for Falcon — an intelligent design system platform. Designed to communicate sophistication, intelligence, and creative power at first glance.',
       creativeDirection: 'Deep black canvas with warm golden-bronze 3D typographic sculpture as the hero centerpiece, paired with a sculpted silver chrome falcon eagle emblem as the official brandmark. Minimal layout with strong editorial micro-labels and a premium SaaS aesthetic.',
       process: 'Vector brandmark development, wireframing, component hierarchy mapping, visual polish, and typographic refinement. Final visual optimized for both desktop and responsive breakpoints.'
