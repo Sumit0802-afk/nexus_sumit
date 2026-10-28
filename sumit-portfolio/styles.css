@@ -4711,6 +4711,7 @@ html.intro-first .hero-title {
 }
 .modal-gallery[hidden] { display: none; }
 .modal-gallery-item { margin: 0; }
+.modal-gallery-item:last-child:nth-child(odd) { grid-column: 1 / -1; }
 .modal-gallery-item img {
   display: block;
   width: 100%;

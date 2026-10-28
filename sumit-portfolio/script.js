@@ -107,6 +107,23 @@ document.addEventListener('DOMContentLoaded', () => {
       creativeDirection: 'A calm deep forest-green sidebar and accents over a warm off-white canvas, with cinematic mountain hero imagery. Category-coded pills and icons, generous card spacing, and clear typographic hierarchy keep dense trip data scannable. Honest-data patterns like "UNVERIFIED" and "ESTIMATE" tags build trust.',
       process: 'Information architecture for 12 app sections, timeline and list/map itinerary views, budget visualisation (donut + bar charts), discovery card grid, safety and advisory layouts, and a side-panel travel copilot — all built on a consistent component system.'
     },
+    'project-kernellab': {
+      title: 'KERNELLAB — LIGHTWEIGHT VIRTUALIZATION LAB',
+      client: 'PRODUCT DESIGN // ACADEMIC PROJECT',
+      category: 'UI/UX // WEB APP // DASHBOARD',
+      year: '2026',
+      refCode: 'REF: APP-2026/KRL',
+      coverImg: 'assets/work-kernellab-01-tools.jpg',
+      detailImg: 'assets/work-kernellab-02-os-mechanisms.jpg',
+      gallery: [
+        { src: 'assets/work-kernellab-03-containers-vs-vms.jpg', caption: 'Containers vs VMs — stack diagrams and feature table' },
+        { src: 'assets/work-kernellab-04-containers.jpg', caption: 'Containers — simulated instance management' },
+        { src: 'assets/work-kernellab-05-overview.jpg', caption: 'Overview — system command centre with live metrics' }
+      ],
+      overview: 'KernelLab is an educational web dashboard for an Operating Systems course that explains lightweight virtualization by letting people explore it. Users manage simulated containers, inspect Linux namespaces and cgroups, compare containers with virtual machines, and see how real tools like Docker, Podman, LXC and Kubernetes fit in.',
+      creativeDirection: 'A near-black command-centre interface with a single crimson accent used for state, focus and live signals. Monospace numerals for metrics, quiet card borders and a persistent sidebar keep a technical subject calm and readable, while clear "simulated" labels keep it honest.',
+      process: 'Information architecture across 11 learning modules, dashboard KPI cards and trend charts, interactive namespace selector with per-container views, layered architecture diagrams, a data table with inline actions, and a reusable dark component system.'
+    },
     'project-ehsaas': {
       title: 'अहसास — STAY संस्कारी // CULTURAL COLLAGE SERIES',
       client: 'CULTURAL ARTWORK // PERSONAL SERIES',
