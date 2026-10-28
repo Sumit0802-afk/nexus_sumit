@@ -3024,7 +3024,7 @@ h1, h2, h3, h4, .font-display {
   }
 
   .hero-title {
-    font-size: clamp(2.8rem, 12vw, 4.8rem);
+    font-size: clamp(2rem, 9.5vw, 4.8rem);
     line-height: 0.92;
     margin-bottom: 1.25rem;
   }
@@ -3518,7 +3518,7 @@ h1, h2, h3, h4, .font-display {
   }
 
   .hero-title {
-    font-size: clamp(2.4rem, 13vw, 3.4rem);
+    font-size: clamp(1.9rem, 9.5vw, 3.4rem);
   }
 
   .editorial-section-title {
